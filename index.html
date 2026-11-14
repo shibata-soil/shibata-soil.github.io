@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="京都大学 大学院地球環境学堂 柴田誠（土壌学）のホームページ。アジア・アフリカの熱帯林から日本の水田まで、土の養分循環を現場で研究しています。フィールドに出たい学生を募集しています。">
+<meta property="og:title" content="柴田誠 — 京都大学 地球環境学堂">
+<meta property="og:type" content="website">
+<style>img{max-width:100%;height:auto;display:block}[hidden]{display:none!important}body{margin:0}</style>
+<title>柴田誠 — 京都大学 地球環境学堂</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Kiwi+Maru:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Nunito+Sans:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a soil profile read top to bottom. Left-aligned editorial column; horizon colours (Munsell) carry the identity, everything else stays quiet. */
+:root{
+  --bg:#F4EFE6;
+  --bg-alt:#ECE5D8;
+  --surface:#F4EFE6;
+  --ink:#2E2722;
+  --muted:#574C43;
+  --rule:#D9CFC0;
+  --accent:#C8622F;
+  --accent-strong:#A94F24;
+  --accent-ink:#ffffff;
+  --gley:#6F7F4E;
+  --todo-bg:#EBD9A6;--todo-fg:#6E5410;
+  --h-o:#3a2c22;--h-a:#6b3f2a;--h-b:#a8442a;--h-c:#c0623c;
+  --p-ap:#5b5650;--p-b:#7f7c74;--p-mot:#b8742f;--p-c:#6f8a80;
+  --f-voice:"Kiwi Maru",cursive;
+  --f-title:"Zen Maru Gothic","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-latin:"Nunito Sans","Zen Kaku Gothic New",sans-serif;
+  --f-mono:"IBM Plex Mono","Zen Kaku Gothic New",monospace;
+  --s-1:.8125rem;--s0:1rem;--s1:1.1875rem;--s2:1.5rem;--s3:2.125rem;--s4:clamp(2.25rem,6vw,3.75rem);
+  --wrap:68rem;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit;text-decoration-color:color-mix(in srgb,var(--accent-strong) 40%,transparent);text-underline-offset:.2em}
+a:hover{color:var(--accent-strong)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-title);font-weight:700;line-height:1.35;letter-spacing:.03em;text-wrap:balance;word-break:auto-phrase;margin:0}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.todo{background:var(--todo-bg);color:var(--todo-fg);font-family:var(--f-body);font-size:.78em;font-weight:700;padding:.05em .45em;border-radius:3px;white-space:nowrap}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 95%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:1rem;padding-block:.6rem}
+.brand{font-family:var(--f-title);font-weight:700;font-size:var(--s1);text-decoration:none;white-space:nowrap}
+.brand small{font-family:var(--f-latin);font-weight:600;font-size:.68em;color:var(--muted);margin-left:.6em}
+.nav{display:flex;gap:1.4rem;margin-left:auto;overflow-x:auto;scrollbar-width:none;font-family:var(--f-latin);font-size:.9375rem;font-weight:600;letter-spacing:.02em}
+.nav::-webkit-scrollbar{display:none}
+.nav a{text-decoration:none;white-space:nowrap;color:var(--ink)}
+.nav a:hover{color:var(--ink)}
+.nav a.join{color:var(--accent-strong);font-weight:700}
+.nav a.join small{font-family:var(--f-title);font-weight:700;font-size:.68rem;letter-spacing:.1em;color:var(--accent-strong);border:1px solid var(--accent-strong);border-radius:2px;padding:.08em .4em 0 .5em;margin-left:.45em;line-height:1.3;vertical-align:.12em;white-space:nowrap}
+@media (max-width:760px){.brand small{display:none}.top .wrap{flex-wrap:wrap;gap:.25rem}.nav{margin-left:0;width:100%;gap:.15rem 1rem;font-size:.875rem;flex-wrap:wrap;overflow:visible}}
+
+/* hero banner */
+.hero-banner{position:relative;height:clamp(420px,60vh,680px);overflow:hidden}
+.hero-banner img{width:100%;height:100%;object-fit:cover;object-position:center 60%;display:block}
+.hero-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(46,39,34,.72) 0%,rgba(46,39,34,.35) 45%,rgba(46,39,34,0) 80%)}
+.hero-banner .wrap{position:absolute;inset:0;z-index:1;display:grid;grid-template-rows:1fr auto auto;align-content:end}
+.hero-banner .banner-text{font-family:var(--f-title);font-weight:700;font-size:clamp(1.6rem,3.6vw,2.75rem);line-height:1.35;letter-spacing:.03em;color:#F4EFE6;text-shadow:0 1px 2px rgba(46,39,34,.5);grid-row:2;padding-bottom:clamp(2rem,5vw,3.5rem)}
+.hero-banner .banner-text em{font-style:normal;color:#E89A6A}
+.hero-banner .banner-sub{font-size:.7em}
+.banner-cap{grid-row:3;font-size:.65rem;color:rgba(244,239,230,.7);text-align:right;padding-bottom:.6rem}
+.nb{display:inline-block}
+.nw{white-space:nowrap}
+/* タブレット縦向き（iPad の 768px など）と 481〜1000px の幅：PC と同じ 60vh だと縦長の画面で写真が画面の6割を占め、文字（3.6vw）が小さく見えるので、帯を 46vh に低く、文字を 4.6vw（768px で約35px）に大きくする */
+@media (min-width:481px) and (max-width:1000px),(min-width:481px) and (orientation:portrait){.hero-banner{height:clamp(340px,46vh,560px)}.hero-banner .banner-text{font-size:clamp(1.9rem,4.6vw,2.75rem)}}
+/* スマホ：写真の帯は画面の半分より低く（44vh）、文字は大きめ（7.2vw ≒ 390px で 28px）。帯が大きすぎて文字が小さく見えていたので調整 */
+@media (max-width:480px){.hero-banner{height:clamp(300px,44vh,420px)}.hero-banner .banner-text{font-size:clamp(1.5rem,7.2vw,1.9rem);padding-bottom:1.4rem}}
+
+/* hero */
+.hero .wrap{padding-block:clamp(2.5rem,7vw,5rem) clamp(2rem,5vw,4rem)}
+/* 写真の列はページ幅に対する割合で持つ。幅が狭くなると写真が細くなり、高さは文章に合わせて切り抜く（学生募集ページの冒頭と同じ動き） */
+.hero-inner{display:grid;grid-template-columns:minmax(0,42em) 30%;justify-content:space-between;align-items:start;column-gap:40px}
+.hero-inner .intro-photo{align-self:stretch}
+.hero-inner .intro-photo img{height:100%;min-height:100%;object-fit:cover;object-position:center}
+.intro-photo{position:relative;margin:0}
+.intro-photo img{width:100%;height:auto;display:block}
+.intro-photo figcaption{position:absolute;left:.7rem;bottom:.7rem;max-width:calc(100% - 1.4rem);margin:0;font-size:12px;line-height:1.45;color:#fff;background:rgba(0,0,0,.38);padding:.15rem .45rem;border-radius:3px}
+@media (max-width:760px){.hero-inner{grid-template-columns:1fr;row-gap:1.8rem}.intro-photo{max-width:320px}.hero-inner .intro-photo{align-self:start}.hero-inner .intro-photo img{height:auto;min-height:0}}
+.lede-lead{font-family:var(--f-body);font-weight:500;font-size:1.125rem;color:var(--ink);margin-bottom:.5rem}
+.lede{font-size:var(--s1);color:var(--ink)}
+.who{margin-top:1.6rem;color:var(--muted);font-size:.9375rem;line-height:1.7}
+.who b{color:var(--ink);font-size:1.125rem}
+.who small{font-size:.875rem}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:.7em 1.2em;border-radius:2px;text-decoration:none;font-family:var(--f-title);font-weight:700;font-size:var(--s-1);border:1.5px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);border-radius:0}
+.btn.primary:hover{color:var(--accent-ink);filter:brightness(1.08)}
+.btn:hover{color:inherit}
+.affil{display:grid;grid-template-columns:auto auto 1fr;column-gap:.6em;margin-top:.15rem;color:var(--muted);font-size:.9375rem;line-height:1.7}
+.affil .univ{grid-row:1 / span 2}
+.affil span{white-space:nowrap}
+.affil a{color:inherit}
+.who-note{margin-top:.5rem;color:var(--muted);font-size:.875rem}
+/* .br-wide：広い画面だけで改行 / .br-narrow：狭い画面だけで改行 */
+.br-narrow{display:none}
+@media (max-width:760px){.br-wide{display:none}.br-narrow{display:inline}}
+@media (max-width:560px){.affil{grid-template-columns:auto 1fr}.affil .univ{grid-row:1 / span 4}}
+
+
+/* sections */
+section{border-top:1px solid var(--rule)}
+section > .wrap{padding-block:clamp(3rem,7vw,5rem)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr);gap:.6rem;margin-bottom:2.2rem;max-width:44rem}
+.sec-head .depth{font-family:var(--f-body);font-weight:700;font-size:var(--s-1);color:var(--muted)}
+.sec-head h2{font-size:var(--s3)}
+.sec-head p{color:var(--muted)}
+
+/* research overview */
+.overview-top{display:grid;grid-template-columns:minmax(0,42em) 30%;justify-content:space-between;align-items:stretch;column-gap:40px;margin-bottom:2.2rem}
+.intro-photo.fit{display:block;height:100%}
+.intro-photo.fit img{width:100%;height:100%;object-fit:cover;object-position:right center}
+/* 761〜1000px（タブレット・スマホ横向き）：写真の列を30%のままにすると細長い帯になるので、列を36%に広げ、高さは文章に合わせず4:5で止める */
+@media (min-width:761px) and (max-width:1000px){.hero-inner,.overview-top{grid-template-columns:minmax(0,1fr) 36%;align-items:start}.hero-inner .intro-photo,.intro-photo.fit{align-self:start;height:auto}.hero-inner .intro-photo img,.intro-photo.fit img{height:auto;min-height:0;aspect-ratio:4/5}}
+@media (max-width:760px){.overview-top{grid-template-columns:1fr;row-gap:1.6rem}.overview-top .intro-photo{max-width:320px}.intro-photo.fit{height:auto}.intro-photo.fit img{height:auto;aspect-ratio:4/3}}
+/* スマホでは写真を本文と同じ幅いっぱいに（学生募集ページの冒頭写真と同じ動き） */
+@media (max-width:560px){.intro-photo,.overview-top .intro-photo{max-width:none}}
+.overview-head{}
+.overview-head .depth{font-family:var(--f-body);font-weight:700;font-size:var(--s-1);color:var(--muted)}
+/* 語の途中で折れないよう2つの句を .nb で包み、狭い画面では文字を少し小さくして「食べものの足元には、」が1行に収まるようにする */
+.overview-head h2{font-family:var(--f-title);font-weight:700;font-size:clamp(1.3rem,7.2vw,2.125rem);margin:.5rem 0 1.1rem}
+.overview-text{max-width:42em}
+.overview-more{margin-top:1.3rem;font-weight:700;font-size:var(--s-1);max-width:42em}
+.theme-list{list-style:none;margin:2.2rem 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px}
+.theme-list li{border-top:1px solid var(--rule)}
+.theme-list a{display:block;padding:.85rem 0;text-decoration:none;font-family:var(--f-title);font-size:var(--s1);line-height:1.5}
+.theme-list a:hover{color:var(--accent)}
+.theme-list .where{display:block;font-family:var(--f-body);font-size:.78rem;color:var(--muted);margin-bottom:.15rem}
+.sec-head-row{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:2.2rem}
+.sec-head-row h2{font-size:var(--s3)}
+.sec-head-row a{font-size:var(--s-1);white-space:nowrap}
+/* テーマ名は読点で2行に割ってある。狭い画面でも <br> は残す（消すと「守／る」「農／業」のように語の途中で折れる） */
+@media (max-width:760px){.theme-list{grid-template-columns:1fr}}
+
+/* news */
+.news-month{font-family:var(--f-mono);font-weight:500;font-size:var(--s0);color:var(--accent-strong);padding:1.2rem 0 .25rem;border-bottom:2px solid var(--accent)}
+.news-row:hover{color:var(--accent)}
+.kind{display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;white-space:nowrap;min-width:4.6em;padding:.1em .5em;border-radius:3px;margin-right:.6em;flex-shrink:0;background:#F3DCCB;color:#8C3F1C}
+.kind-award{background:#EBD9A6;color:#6E5410}
+.kind-paper{background:#DCE3C8;color:#3F4F22}
+.kind-field{background:#E3D1BD;color:#5E3F28}
+.kind-grant{background:#D8DDD5;color:#3E4A44}
+.kind-info{background:#E6E1D6;color:#4A4038}
+.news-row{display:flex;align-items:center;padding:.4rem 0;border-bottom:1px solid var(--rule);font-size:.875rem;line-height:1.6;text-decoration:none;color:inherit}
+.news-cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem 3rem;align-items:start}
+.news-col-title{font-family:var(--f-title);font-weight:700;font-size:var(--s1);margin:0 0 .2rem}
+.news-col .news-month:first-of-type{padding-top:.6rem}
+.news-more{margin-top:1.2rem}
+#news-list-field .kind{display:none} /* 右列は全部「フィールド」なのでバッジを省く */
+@media (max-width:760px){.news-cols{grid-template-columns:1fr;gap:2.2rem}}
+
+/* contact */
+#contact{background:var(--bg-alt);color:var(--ink);border-top:1px solid var(--rule)}
+#contact .sec-head p,#contact .muted{color:var(--muted)}
+#contact .sec-head .depth{color:var(--accent-strong);opacity:1}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;font-family:var(--f-mono);font-size:clamp(1rem,3.4vw,1.25rem);overflow-wrap:anywhere}
+.copy{font:inherit;font-family:var(--f-body);font-size:var(--s-1);font-weight:700;padding:.45em 1em;border-radius:3px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.copy:hover{background:var(--ink);color:var(--bg)}
+.addr{margin-top:1.6rem;line-height:1.9}
+footer{background:var(--ink);color:color-mix(in srgb,var(--bg) 70%,var(--ink));font-size:.72rem}
+footer .wrap{padding-block:1.2rem 2rem;border-top:1px solid color-mix(in srgb,var(--bg) 20%,var(--ink))}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">柴田 誠</a>
+    <nav class="nav" aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="students.html" class="join">For Students<small>募集中</small></a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html">News</a>
+      <a href="members.html">Members</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero-banner">
+  <img src="img/hero/band-village-a.jpg" alt="京都府丹後半島の里山。森と畑と田んぼが隣り合う" width="2000" height="1000" loading="eager" fetchpriority="high">
+  <div class="wrap">
+    <span class="banner-cap">京都府丹後半島の里山</span>
+    <div class="banner-text">
+      <span class="nb">森でも、</span><br><span class="nb">畑でも、</span><br><span class="nb">田んぼでも。</span><br><span class="nb banner-sub">土を掘って、<em>食の未来</em>を考える。</span>
+    </div>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+      <p class="lede-lead"><span class="nb">熱帯の森やサバンナから、</span><span class="nb">日本の田んぼや畑まで。</span></p>
+      <p class="lede">土の中で起きている養分の動きを現場で測り、<br class="br-wide">その土地に合った、環境への負担が少ない農業のかたちを探っています。</p>
+      <p class="who"><b>柴田 誠</b>　准教授・京都大学博士（農学）</p>
+      <div class="affil">
+        <span class="univ">京都大学</span>
+        <span><a href="https://www.ges.kyoto-u.ac.jp/" target="_blank" rel="noopener">大学院地球環境学堂</a></span>
+        <span><a href="https://www.soils.kais.kyoto-u.ac.jp/" target="_blank" rel="noopener">陸域生態系管理論分野</a></span>
+        <span><a href="https://www.kais.kyoto-u.ac.jp/" target="_blank" rel="noopener">大学院農学研究科</a></span>
+        <span>比較農業論分野（両任）</span>
+      </div>
+      <p class="who-note">農学研究科 <a href="https://www.soils.kais.kyoto-u.ac.jp/" target="_blank" rel="noopener">土壌学研究室</a>と連携して研究を進めています</p>
+      <div class="cta">
+        <a class="btn primary" href="students.html">フィールドに出たい学生へ →</a>
+        <a class="btn" href="research.html">研究を見る</a>
+      </div>
+      </div>
+      <figure class="intro-photo"><img src="img/hero/intro-pit.jpg" alt="カメルーン東部で掘った土壌断面坑の底に立つ柴田" width="1000" height="1000"><figcaption><span class="nb">カメルーン東部、</span><span class="nb">1 m 深のオキシソルにて</span></figcaption></figure>
+    </div>
+  </div>
+</div>
+
+<section id="research">
+  <div class="wrap">
+    <div class="overview-top">
+      <div>
+        <div class="overview-head">
+          <p class="depth mono">研究の概要</p>
+          <h2><span class="nb">食べものの足元には、</span><span class="nb">土がある。</span></h2>
+        </div>
+        <p class="overview-text">私たちの食べものの95%は、直接または間接に、土の上でつくられています（<a href="https://www.fao.org/fao-stories/article/en/c/1126974/" target="_blank" rel="noopener">FAOの推計</a>）。土は、この地球で人類が生きていくための基盤です。その土の中で、窒素やリンなどの養分はどう巡り、どこへ失われていくのか。「持続的な農業」と言うとき、それは何年先まで、誰にとってのことなのか。土を掘り、測って、そこから考えたいと思っています。</p>
+        <p class="overview-more"><a href="research.html">研究内容の詳細 →</a></p>
+      </div>
+      <figure class="intro-photo fit"><img src="img/hero/overview-harvest-4x3.jpg" alt="新潟県胎内市の田んぼの稲刈り。コンバインの手前に黒い土が見える" width="1000" height="750" loading="lazy"><figcaption>稲刈りの田んぼ、新潟県胎内市</figcaption></figure>
+    </div>
+    <ul class="theme-list" aria-label="研究テーマ">
+      <li><a href="research.html#theme-tropical"><span class="where">カメルーン・ベトナム</span>熱帯林の土は、<br>本当に貧しいのか</a></li>
+      <li><a href="research.html#theme-paddy"><span class="where">新潟ほか国内各地・フィリピン</span>田んぼの土を測って、<br>おコメの品質を守る</a></li>
+      <li><a href="research.html#theme-noinput"><span class="where">近畿・中山間地</span>肥料に頼りすぎず、<br>在来資源を活かす農業</a></li>
+      <li><a href="research.html#theme-som"><span class="where">カメルーン・ベトナム・タイ・日本</span>炭素や窒素は、<br><span class="nb">土のどこに留まり、</span><br class="br-narrow"><span class="nb">どう動くのか</span></a></li>
+      <li><a href="research.html#theme-conversion"><span class="where">カメルーン・タイ・タンザニア</span>森や草原を開墾すると、<br>土の中で何が起きるか</a></li>
+      <li><a href="research.html#theme-life"><span class="where">京都府 宮津・長野県 安曇野</span>土地と、人の暮らしが<br>続いてきた仕組み</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="news">
+  <div class="wrap">
+    <div class="sec-head-row">
+      <h2>最近のできごと</h2>
+    </div>
+    <div class="news-cols">
+      <div class="news-col">
+        <h3 class="news-col-title">学会・論文・お知らせ</h3>
+        <div id="news-list"></div>
+        <p class="news-more"><a href="news.html">これまでのできごとをすべて見る →</a></p>
+      </div>
+      <div class="news-col">
+        <h3 class="news-col-title">フィールド</h3>
+        <div id="news-list-field"></div>
+        <p class="news-more"><a href="news.html#field">調査の記録をすべて見る →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="depth mono">連絡先</p>
+      <h2>見学・相談はいつでもどうぞ</h2>
+      <p style="color:var(--ink)">研究の内容、進学、共同研究について。メールで気軽に連絡してください。</p>
+    </div>
+    <div class="mail"><span id="addr"></span><button class="copy" id="copy" type="button">アドレスをコピー</button></div>
+    <p class="addr muted">〒606-8502 京都市左京区北白川追分町<br>京都大学 農学部総合館 S-584／S-572<br>TEL <a href="tel:+81757536101">075-753-6101</a>（代表）／<a href="tel:+81757536299">075-753-6299</a>（直通）</p>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© Makoto Shibata · Kyoto University　·　業績データ：researchmap</div></footer>
+
+<script src="news.js"></script>
+<script>
+(function(){
+  renderNewsTop("news-list", 15, "other");
+  renderNewsTop("news-list-field", 15, "field");
+  var btn=document.getElementById("copy");
+  var u="shibata.makoto.7c",d="kyoto-u.ac.jp";
+  var shown=document.getElementById("addr");
+  if(shown){shown.textContent=u+" [at] "+d;}
+  btn.addEventListener("click",function(){
+    var addr=u+String.fromCharCode(64)+d;
+    function done(){btn.textContent="コピーしました";setTimeout(function(){btn.textContent="アドレスをコピー"},2000)}
+    function fallback(){document.getElementById("addr").textContent=addr;var r=document.createRange();r.selectNodeContents(document.getElementById("addr"));var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent="選択しました。コピーしてください"}
+    try{navigator.clipboard.writeText(addr).then(done,fallback)}catch(e){fallback()}
+  });
+})();
+</script>
+
+<script data-goatcounter="https://shibata-soil.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="京都大学 大学院地球環境学堂 柴田誠（土壌学）のホームページ。アジア・アフリカの熱帯林から日本の水田まで、土の養分循環を現場で研究しています。フィールドに出たい学生を募集しています。">
+<meta property="og:title" content="研究テーマ — 柴田誠 — 京都大学 地球環境学堂">
+<meta property="og:type" content="website">
+<style>img{max-width:100%;height:auto;display:block}[hidden]{display:none!important}body{margin:0}</style>
+<title>研究テーマ — 柴田誠 — 京都大学 地球環境学堂</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Kiwi+Maru:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Nunito+Sans:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a soil profile read top to bottom. Left-aligned editorial column; horizon colours (Munsell) carry the identity, everything else stays quiet. */
+:root{
+  --bg:#F4EFE6;
+  --bg-alt:#ECE5D8;
+  --surface:#F4EFE6;
+  --ink:#2E2722;
+  --muted:#574C43;
+  --rule:#D9CFC0;
+  --accent:#C8622F;
+  --accent-strong:#A94F24;
+  --accent-ink:#ffffff;
+  --gley:#6F7F4E;
+  --todo-bg:#EBD9A6;--todo-fg:#6E5410;
+  --h-o:#3a2c22;--h-a:#6b3f2a;--h-b:#a8442a;--h-c:#c0623c;
+  --p-ap:#5b5650;--p-b:#7f7c74;--p-mot:#b8742f;--p-c:#6f8a80;
+  --f-voice:"Kiwi Maru",cursive;
+  --f-title:"Zen Maru Gothic","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-latin:"Nunito Sans","Zen Kaku Gothic New",sans-serif;
+  --f-mono:"IBM Plex Mono","Zen Kaku Gothic New",monospace;
+  --s-1:.8125rem;--s0:1rem;--s1:1.1875rem;--s2:1.5rem;--s3:2.125rem;--s4:clamp(2.25rem,6vw,3.75rem);
+  --wrap:68rem;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit;text-decoration-color:color-mix(in srgb,var(--accent-strong) 40%,transparent);text-underline-offset:.2em}
+a:hover{color:var(--accent-strong)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-title);font-weight:700;line-height:1.35;letter-spacing:.03em;text-wrap:balance;margin:0}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.todo{background:var(--todo-bg);color:var(--todo-fg);font-family:var(--f-body);font-size:.78em;font-weight:700;padding:.05em .45em;border-radius:3px;white-space:nowrap}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 95%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:1rem;padding-block:.6rem}
+.brand{font-family:var(--f-title);font-weight:700;font-size:var(--s1);text-decoration:none;white-space:nowrap}
+.brand small{font-family:var(--f-latin);font-weight:600;font-size:.68em;color:var(--muted);margin-left:.6em}
+.nav{display:flex;gap:1.4rem;margin-left:auto;overflow-x:auto;scrollbar-width:none;font-family:var(--f-latin);font-size:.9375rem;font-weight:600;letter-spacing:.02em}
+.nav::-webkit-scrollbar{display:none}
+.nav a{text-decoration:none;white-space:nowrap;color:var(--ink)}
+.nav a:hover{color:var(--ink)}
+.nav a.join{color:var(--accent-strong);font-weight:700}
+.nav a.join small{font-family:var(--f-title);font-weight:700;font-size:.68rem;letter-spacing:.1em;color:var(--accent-strong);border:1px solid var(--accent-strong);border-radius:2px;padding:.08em .4em 0 .5em;margin-left:.45em;line-height:1.3;vertical-align:.12em;white-space:nowrap}
+@media (max-width:760px){.brand small{display:none}.top .wrap{flex-wrap:wrap;gap:.25rem}.nav{margin-left:0;width:100%;gap:.15rem 1rem;font-size:.875rem;flex-wrap:wrap;overflow:visible}}
+
+/* sections */
+section{border-top:1px solid var(--rule)}
+section > .wrap{padding-block:clamp(3rem,7vw,5rem)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr);gap:.6rem;margin-bottom:2.2rem;max-width:44rem}
+.sec-head .depth{font-family:var(--f-body);font-weight:700;font-size:var(--s-1);color:var(--muted)}
+.sec-head h2{font-size:var(--s3)}
+/* 調査地の見出しは語の途中で折れないよう2つの句を .nb で包み、狭い画面では文字を少し小さくする */
+.nb{display:inline-block}
+.sec-head h2.sites-head{font-size:clamp(1.3rem,7.2vw,2.125rem)}
+.sec-head p{color:var(--muted)}
+.research-hero{font-family:var(--f-title);font-weight:700;font-size:clamp(1.6rem,3.6vw,2.75rem)}
+.research-lede{font-family:var(--f-body);font-weight:500;font-size:var(--s1);color:var(--ink)}
+
+/* soil profile strip */
+.profiles-lead{max-width:42em;color:var(--ink);margin-top:1.6rem;margin-bottom:1.2rem}
+.br-wide{}
+.br-narrow{display:none}
+@media (max-width:760px){.br-narrow{display:inline}}
+.profiles-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:22px;align-items:start}
+.profiles-strip figure{margin:0}
+.profiles-strip figure img{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;display:block}
+.profiles-strip .place{font-family:var(--f-body);font-weight:600;font-size:14px;margin-top:.4rem}
+.profiles-strip .note{font-size:13px;color:var(--muted)}
+.profiles-note{font-size:.75rem;color:var(--muted);margin-top:.9rem;margin-bottom:2.4rem}
+@media (max-width:760px){.profiles-strip{display:flex;overflow-x:auto;scrollbar-width:thin;gap:16px}.profiles-strip figure{flex:0 0 150px}.br-wide{display:none}}
+
+/* research */
+.themes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem 3rem}
+.theme{display:grid;gap:.7rem;align-content:start;min-width:0}
+.theme .tag{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{font-size:.72rem;padding:.1rem .55rem;border-radius:3px;border:1px solid var(--rule);color:var(--muted);white-space:nowrap}
+.chip.abroad{border-color:color-mix(in srgb,var(--accent) 45%,transparent);color:var(--accent-strong)}
+.chip.japan{border-color:color-mix(in srgb,var(--gley) 55%,transparent);color:#55633A}
+.theme h3{font-family:var(--f-voice);font-weight:500;font-size:var(--s2)}
+.theme p{color:var(--ink)}
+.theme .refs{font-size:var(--s-1);color:var(--muted);line-height:1.6}
+.theme .refs i{font-style:italic}
+/* テーマの見出しは読点で2行に割ってある。狭い画面でも <br> は残す（消すと語の途中で折れる） */
+@media (max-width:760px){.themes{grid-template-columns:minmax(0,1fr)}}
+
+/* 写真枠。本番は <figure class="photo"><img src="img/…/xxx.jpg" alt="…"><figcaption>…</figcaption></figure>、
+   仮の枠は <div class="photo ph-…"><span>…</span></div>（ph-… が付いている間だけ「写真を差し替え」が出る） */
+.photo{aspect-ratio:16/10;max-width:100%;margin:0;border-radius:0;display:flex;align-items:flex-end;padding:.7rem .8rem;font-size:.72rem;color:#fff;line-height:1.45;position:relative;overflow:hidden;background:#d8d0c2}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.photo span,.photo figcaption{position:relative;background:rgba(0,0,0,.38);padding:.15rem .45rem;border-radius:3px}
+.photo figcaption:empty{display:none}
+
+/* sites */
+.sites{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem}
+.sites h3{font-size:var(--s1);display:flex;align-items:baseline;gap:.6rem;margin-bottom:.8rem}
+.sites h3 .mono{font-size:var(--s-1);color:var(--muted);font-weight:400}
+.site-list{list-style:none;margin:0;padding:0;display:grid}
+.site-list li{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:1rem;padding:.75rem 0;border-top:1px dashed var(--rule)}
+.site-list li:last-child{border-bottom:1px dashed var(--rule)}
+.site-list .place{font-weight:700;white-space:nowrap}
+.site-list .what{color:var(--muted);font-size:var(--s-1);line-height:1.65}
+.abroad-col h3{color:var(--accent)} .japan-col h3{color:var(--gley)}
+.japan-col .site-list li{grid-template-columns:8.5rem minmax(0,1fr)}
+@media (max-width:760px){.sites{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:420px){.site-list li{grid-template-columns:minmax(0,1fr);gap:.1rem}}
+
+/* contact (for footer) */
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:.7em 1.2em;border-radius:2px;text-decoration:none;font-family:var(--f-title);font-weight:700;font-size:var(--s-1);border:1.5px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);border-radius:0}
+.btn.primary:hover{color:var(--accent-ink);filter:brightness(1.08)}
+.btn:hover{color:inherit}
+
+footer{background:var(--ink);color:color-mix(in srgb,var(--bg) 70%,var(--ink));font-size:.72rem}
+footer .wrap{padding-block:1.2rem 2rem;border-top:1px solid color-mix(in srgb,var(--bg) 20%,var(--ink))}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">柴田 誠</a>
+    <nav class="nav" aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="students.html" class="join">For Students<small>募集中</small></a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html">News</a>
+      <a href="members.html">Members</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:0">
+      <p class="depth mono">研究テーマ</p>
+      <h2 class="research-hero">足元の土から、<br>自然のしくみと農業のかたちを考える。</h2>
+      <p class="research-lede">その土地の土の性質と、生態系の物質循環をふまえた農業を目指して。</p>
+      <p class="profiles-lead">穴を掘って土の横顔を見てみると、場所ごとにいろんな表情があります。<br class="br-wide">その一つひとつが、そこで土がどうやってできたのかを物語っています。</p>
+    </div>
+    <div class="profiles-strip">
+      <figure><img src="img/hero/profile-cameroon-east-v2.jpg" alt="カメルーン東部の熱帯林の土壌断面" width="800" height="1200" loading="lazy"><p class="place">カメルーン東部</p><p class="note">熱帯林の赤い土</p></figure>
+      <figure><img src="img/hero/profile-cameroon-south.jpg" alt="カメルーン南部の熱帯林の土壌断面" width="560" height="840" loading="lazy"><p class="place">カメルーン南部</p><p class="note"><span class="nb">同じ熱帯林でも、</span><span class="nb">黄色い土</span></p></figure>
+      <figure><img src="img/hero/profile-podzol.jpg" alt="カリフォルニアの矮小林のポドゾルの土壌断面" width="520" height="780" loading="lazy"><p class="place">カリフォルニア</p><p class="note"><span class="nb">矮小林の、</span><span class="nb">漂白した層をもつ土</span></p></figure>
+      <figure><img src="img/hero/profile-shibecha-v2.jpg" alt="北海道標茶の火山灰土の土壌断面" width="800" height="1200" loading="lazy"><p class="place">北海道 標茶</p><p class="note"><span class="nb">火山灰が</span><span class="nb">何度も積もった土</span></p></figure>
+      <figure><img src="img/hero/profile-paddy-v2.jpg" alt="京都・修学院の棚田の水田土壌断面" width="800" height="1200" loading="lazy"><p class="place">京都 修学院</p><p class="note">棚田の灰色の土</p></figure>
+    </div>
+    <p class="profiles-note">メジャーの数字は 10 cm 刻み。標茶の写真は深さ約 90 cm まで</p>
+    <div class="sec-head" style="margin-top:2.4rem">
+      <p style="color:var(--ink)">その土地で土がどうできたのか、生態系のなかで養分がどう巡っているのか。それ自体が面白い問いであり、同時に、それを知らずに数世代先まで続く農業の姿は描けないとも考えています。なので、国内外の現場に足を運んで土を掘り、持ち帰った試料を実験室で分析します。熱帯の森林やサバンナから、日本の水田や畑まで、その場所での土の成り立ちと物質循環を明らかにし、その先で、その土地に合った農業のかたち、ひいては心身ともに豊かで健全な社会へとつながる道筋を探っています。</p>
+    </div>
+    <div class="themes">
+      <article class="theme" id="theme-tropical">
+        <figure class="photo"><img src="img/research/research-01-forest.jpg" alt="カメルーンの熱帯林、板根の大木" width="1600" height="999" loading="lazy"><figcaption>カメルーン東部の熱帯林で</figcaption></figure>
+        <div class="tag"><span class="chip abroad">カメルーン</span><span class="chip abroad">ベトナム</span></div>
+        <h3>熱帯林の土は、<br>本当に貧しいのか</h3>
+        <p>赤く強く風化した熱帯の土（オキシソル／フェラルソル）は「やせた土」と言われてきました。では、その上に茂る生育旺盛な熱帯林は、窒素やリンをどう手に入れ、どう使い回しているのか。森の土の養分の動きを追いかけています。</p>
+        <p class="refs">関連：Shibata et al. (2017) <i>Soil Sci. Plant Nutr.</i>／科研費 若手研究「熱帯強風化土壌の肥沃度再考ーオキシソル土壌は貧しいのか？」（2019–2021年度、代表）</p>
+      </article>
+      <article class="theme" id="theme-paddy">
+        <figure class="photo"><img src="img/research/research-03-paddy.jpg" alt="新潟の水田で土を採取する様子" width="1600" height="999" loading="lazy"><figcaption>新潟県胎内市の水田で</figcaption></figure>
+        <div class="tag"><span class="chip japan">新潟ほか国内各地</span><span class="chip abroad">フィリピン</span></div>
+        <h3>田んぼの土を測って、<br>おコメの品質を守る</h3>
+        <p>夏の高温で、おコメの品質低下が問題になっています。水田土壌のケイ酸などの肥沃度と、籾の品質との関係を生産者の田んぼで調べています。カントリーエレベーターに集まる情報を使って、地域ごとに土の状態を評価する仕組みづくりも始めました。</p>
+        <p class="refs">共同研究：新潟食料農業大学 伊藤豊彰先生</p>
+        <p class="refs">関連：柴田ら (2025) ペドロジスト／科研費 基盤研究(B)「カントリーエレベーターを活用した地域分散型水田肥沃度評価システムの開発」（2026–2028年度、代表）</p>
+      </article>
+      <article class="theme" id="theme-noinput">
+        <figure class="photo"><img src="img/research/research-04-tea.jpg" alt="無施肥茶園での調査区の設置" width="1600" height="1000" loading="lazy"><figcaption>無施肥茶園の調査区、近畿</figcaption></figure>
+        <div class="tag"><span class="chip japan">近畿</span><span class="chip japan">中山間地</span></div>
+        <h3>肥料に頼りすぎず、<br>在来資源を活かす農業</h3>
+        <p>何十年も肥料を入れていない茶園や田んぼがあります。なぜ作物が育ち続けるのか。土の中の炭素と窒素の収支を、慣行栽培や有機栽培と比べながら測っています。肥料に頼りすぎず、その土地にある資源を活かす農業の手がかりを、そこから探しています。</p>
+        <p class="refs">共同研究：<a href="https://kkatsura-ku.github.io/keisukekatsura/index.html" target="_blank" rel="noopener">京都大学 作物学研究室（桂圭佑先生）</a></p>
+        <p class="refs">関連：科研費 基盤研究(B)「無投入水田における収量安定性の機構解明」（2026–2028年度、分担）</p>
+      </article>
+      <article class="theme" id="theme-som">
+        <figure class="photo"><img src="img/research/research-05-som.jpg" alt="学内圃場の水田に並べた、イネの残渣を入れた筒" width="1600" height="1000" loading="lazy"><figcaption>学内圃場の水田。イネの残渣を入れた筒を並べて</figcaption></figure>
+        <div class="tag"><span class="chip abroad">カメルーン</span><span class="chip abroad">ベトナム</span><span class="chip abroad">タイ</span><span class="chip japan">日本</span></div>
+        <h3>炭素や窒素は、<br><span class="nb">土のどこに留まり、</span><br class="br-narrow"><span class="nb">どう動くのか</span></h3>
+        <p>落ち葉や根、刈り取ったあとの稲わら。土に入った有機物は、どこに、どれくらいの時間とどまるのか。熱帯の森や畑の土から、日本の森林や水田の土まで、有機物を画分ごとに分けて炭素と窒素を測り、硝化などの窒素の変化を追っています。<sup>13</sup>C・<sup>15</sup>Nで印をつけたイネの残渣を土に入れて、その行き先をたどる実験も進めています。</p>
+        <p class="refs">共同研究：<a href="https://sites.google.com/site/sugihara0901/home" target="_blank" rel="noopener">東京農工大学 杉原創先生</a></p>
+        <p class="refs">関連：Wang et al. (2026) <i>Forest Ecosystems</i>／Wang et al. (2026) <i>CATENA</i>／科研費 基盤研究(B)「粘土鉱物組成を考慮した土壌有機炭素蓄積モデルの構築」（2026–2028年度、分担）</p>
+      </article>
+      <article class="theme" id="theme-conversion">
+        <figure class="photo"><img src="img/research/research-02-burn.jpg" alt="焼畑の火入れ直後の畑、カメルーン" width="1600" height="1000" loading="lazy"><figcaption>焼畑の火入れ直後、カメルーン</figcaption></figure>
+        <div class="tag"><span class="chip abroad">カメルーン</span><span class="chip abroad">タイ</span><span class="chip abroad">タンザニア</span></div>
+        <h3>森や草原を開墾すると、<br>土の中で何が起きるか</h3>
+        <p>熱帯では、森林やサバンナが急速に農地へ変わっています。開墾したあとの畑では、養分はどこへどれだけ失われるのか。土が同じタイプでも、元の植生が森林だったかサバンナだったかによって失われ方が違ってくることが分かってきました。また、焼畑の休閑期間は土の養分をどう回復させるのか、ところ違えば休閑の生態学的意義も異なるのか、現地の畑で測っています。</p>
+        <p class="refs">関連：Shibata et al. (2018) <i>Agric. Ecosyst. Environ.</i>／Shibata et al. (2023) <i>Geoderma Regional</i></p>
+      </article>
+      <article class="theme" id="theme-life">
+        <figure class="photo"><img src="img/research/detail-village.jpg" alt="京都府丹後半島の里山。森と畑と田んぼが隣り合う集落" width="1600" height="1000" loading="lazy"><figcaption>丹後半島の里山、京都府</figcaption></figure>
+        <div class="tag"><span class="chip japan">京都府 宮津</span><span class="chip japan">長野県 安曇野</span></div>
+        <h3>土地と、人の暮らしが<br>続いてきた仕組み</h3>
+        <p>丹後の藤織りは、山でフジを採ることから始まります。天蚕（やままゆ）を育てるにも、里山の木がいります。布や糸の材料は、その土地の地形や気候、土と、人の手入れがそろって初めて手に入るもの。そうした土地と暮らしのつながりが、どう受け継がれ、どう変わってきたのか。文化人類学や工芸の研究者と一緒に、フジや天蚕を手がかりに調べています。</p>
+        <p class="refs">共同研究：<a href="https://www.piif.ac.jp/about/faculty_member/kanetani_miwa/" target="_blank" rel="noopener">国際ファッション専門職大学 金谷美和先生</a></p>
+        <p class="refs">関連：Kanetani &amp; Shibata (2025) <i>J. Textile Design Res. Pract.</i>／科研費 基盤研究(A)「『在来マテリアル』の復興と変容の解明：繊維製品原料の多様化社会にむけた学際的研究」（2026–2030年度、分担）</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="sites">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="depth mono">調査地</p>
+      <h2 class="sites-head"><span class="nb">アジア・アフリカから、</span><span class="nb">日本の農村まで。</span></h2>
+      <p>2009年からのタイを出発点に、アフリカ、東南アジア、南アジアへ。<br>ここ数年は日本国内の生産者圃場にも調査地を広げています。</p>
+    </div>
+    <div class="sites">
+      <div class="abroad-col">
+        <h3>海外</h3>
+        <ul class="site-list">
+          <li><span class="place">カメルーン</span><span class="what">東部の森林–サバンナ境界と南部の熱帯雨林。オキシソルの窒素循環、焼畑・カカオ栽培と土壌肥沃度</span></li>
+          <li><span class="place">タンザニア</span><span class="what">北西部のバナナ／コーヒー・ホームガーデンの元素動態</span></li>
+          <li><span class="place">タイ</span><span class="what">北部の焼畑での窒素動態。ゴム園の施肥とメタン</span></li>
+          <li><span class="place">ベトナム</span><span class="what">中部高原の熱帯林とコーヒー園。オキシソルの窒素動態</span></li>
+          <li><span class="place">フィリピン</span><span class="what">国際稲研究所（IRRI）の長期連用試験とルソン島中部の水稲生産者圃場群。水稲の施肥と養分吸収、土壌肥沃度の変動</span></li>
+          <li><span class="place">インド</span><span class="what">南インドの混作。テランガーナ州での地域分散型アンモニア肥料合成</span></li>
+        </ul>
+      </div>
+      <div class="japan-col">
+        <h3>国内</h3>
+        <ul class="site-list">
+          <li><span class="place">各地の水田</span><span class="what">カントリーエレベーターを拠点にした水田肥沃度の評価（新潟県胎内市）<br>無施肥・無投入水田の収量安定性。<sup>13</sup>C・<sup>15</sup>Nで標識したイネ残渣の、土壌有機物への移行過程（亀岡・宇治）<br>棚田の養分動態（丹後半島・京都市修学院）</span></li>
+          <li><span class="place">無施肥の茶園</span><span class="what">肥料を入れない茶園の物質循環（滋賀・奈良・京都）</span></li>
+          <li><span class="place">京都府 丹後半島</span><span class="what">藤織りの原料となるフジと里山資源の変遷</span></li>
+          <li><span class="place">長野県 安曇野</span><span class="what">天蚕が飼育されるクヌギ林と土壌特性</span></li>
+          <li><span class="place">東京都 檜原村</span><span class="what">在来ダイズの栽培技術と窒素動態</span></li>
+          <li><span class="place">近畿地方</span><span class="what">酸性森林土壌での窒素の変化と有機物の安定化</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <a class="btn primary" href="students.html">フィールドに出たい学生へ →</a>
+      <a class="btn" href="publications.html">業績を見る</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© Makoto Shibata · Kyoto University　·　業績データ：researchmap</div></footer>
+
+<script data-goatcounter="https://shibata-soil.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

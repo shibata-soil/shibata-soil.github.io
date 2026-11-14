@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="京都大学 大学院地球環境学堂 柴田誠（土壌学）のホームページ。アジア・アフリカの熱帯林から日本の水田まで、土の養分循環を現場で研究しています。2028年4月入学の大学院生を募集しています。">
+<meta property="og:title" content="学生募集 — 柴田誠 — 京都大学 地球環境学堂">
+<meta property="og:type" content="website">
+<style>img{max-width:100%;height:auto;display:block}[hidden]{display:none!important}body{margin:0}</style>
+<title>学生募集 — 柴田誠 — 京都大学 地球環境学堂</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Kiwi+Maru:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Nunito+Sans:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a soil profile read top to bottom. Left-aligned editorial column; horizon colours (Munsell) carry the identity, everything else stays quiet. */
+:root{
+  --bg:#F4EFE6;
+  --bg-alt:#ECE5D8;
+  --surface:#F4EFE6;
+  --ink:#2E2722;
+  --muted:#574C43;
+  --rule:#D9CFC0;
+  --accent:#C8622F;
+  --accent-strong:#A94F24;
+  --accent-ink:#ffffff;
+  --gley:#6F7F4E;
+  --todo-bg:#EBD9A6;--todo-fg:#6E5410;
+  --h-o:#3a2c22;--h-a:#6b3f2a;--h-b:#a8442a;--h-c:#c0623c;
+  --p-ap:#5b5650;--p-b:#7f7c74;--p-mot:#b8742f;--p-c:#6f8a80;
+  --f-voice:"Kiwi Maru",cursive;
+  --f-title:"Zen Maru Gothic","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-latin:"Nunito Sans","Zen Kaku Gothic New",sans-serif;
+  --f-mono:"IBM Plex Mono","Zen Kaku Gothic New",monospace;
+  --s-1:.8125rem;--s0:1rem;--s1:1.1875rem;--s2:1.5rem;--s3:2.125rem;--s4:clamp(2.25rem,6vw,3.75rem);
+  --wrap:68rem;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit;text-decoration-color:color-mix(in srgb,var(--accent-strong) 40%,transparent);text-underline-offset:.2em}
+a:hover{color:var(--accent-strong)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-title);font-weight:700;line-height:1.35;letter-spacing:.03em;text-wrap:balance;margin:0}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.todo{background:var(--todo-bg);color:var(--todo-fg);font-family:var(--f-body);font-size:.78em;font-weight:700;padding:.05em .45em;border-radius:3px;white-space:nowrap}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 95%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:1rem;padding-block:.6rem}
+.brand{font-family:var(--f-title);font-weight:700;font-size:var(--s1);text-decoration:none;white-space:nowrap}
+.brand small{font-family:var(--f-latin);font-weight:600;font-size:.68em;color:var(--muted);margin-left:.6em}
+.nav{display:flex;gap:1.4rem;margin-left:auto;overflow-x:auto;scrollbar-width:none;font-family:var(--f-latin);font-size:.9375rem;font-weight:600;letter-spacing:.02em}
+.nav::-webkit-scrollbar{display:none}
+.nav a{text-decoration:none;white-space:nowrap;color:var(--ink)}
+.nav a:hover{color:var(--ink)}
+.nav a.join{color:var(--accent-strong);font-weight:700}
+.nav a.join small{font-family:var(--f-title);font-weight:700;font-size:.68rem;letter-spacing:.1em;color:var(--accent-strong);border:1px solid var(--accent-strong);border-radius:2px;padding:.08em .4em 0 .5em;margin-left:.45em;line-height:1.3;vertical-align:.12em;white-space:nowrap}
+@media (max-width:760px){.brand small{display:none}.top .wrap{flex-wrap:wrap;gap:.25rem}.nav{margin-left:0;width:100%;gap:.15rem 1rem;font-size:.875rem;flex-wrap:wrap;overflow:visible}}
+
+/* sections */
+section{border-top:1px solid var(--rule)}
+section > .wrap{padding-block:clamp(3rem,7vw,5rem)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr);gap:.6rem;margin-bottom:2.2rem}
+.sec-head .depth{font-family:var(--f-body);font-weight:700;font-size:var(--s-1);color:var(--muted)}
+.sec-head h2{font-size:var(--s3)}
+.sec-head p{color:var(--muted)}
+
+/* students */
+#students .sec-head{display:grid;grid-template-columns:38% minmax(0,1fr);gap:.6rem 2.4rem}
+#students .sec-head .depth{grid-column:1/-1}
+#students .sec-head .title-row,#students .sec-head > p{grid-column:2}
+#students .sec-head .hero-photo{grid-column:1;grid-row:2/5;align-self:stretch;position:relative;margin:0}
+#students .sec-head .hero-photo img{width:100%;height:100%;min-height:100%;object-fit:cover;display:block;border-radius:0}
+#students .sec-head .hero-photo figcaption{position:absolute;left:.7rem;bottom:.7rem;margin:0;font-size:12px;line-height:1.45;color:#fff;background:rgba(0,0,0,.38);padding:.15rem .45rem;border-radius:3px}
+#students .sec-head h2{font-family:var(--f-title);font-weight:700}
+#students h3{font-family:var(--f-voice);font-weight:500}
+#students{background:var(--bg-alt)}
+@media (max-width:760px){#students .sec-head{grid-template-columns:minmax(0,1fr)}#students .sec-head .title-row,#students .sec-head > p{grid-column:1}#students .sec-head .hero-photo{grid-row:auto;grid-column:1;order:1;align-self:start}#students .sec-head .hero-photo img{height:auto}}
+
+/* 募集中の判子 — 野帳に押した朱印のつもり。ピル型は使わない */
+.title-row{position:relative;display:flex;align-items:center;gap:.8rem 1.6rem;flex-wrap:wrap}
+/* 判子は見出し2行目の右どなりに押す。横幅が足りないときは見出しの右上へ */
+#students .title-row .stamp{align-self:flex-end;margin:0 0 .45em .2rem;transform:rotate(-7deg)}
+@media (max-width:1040px){#students .title-row .stamp{position:absolute;right:.3rem;bottom:calc(100% - .1em);margin:0}}
+@media (max-width:760px){#students .sec-head h2{font-size:1.75rem}}
+.stamp{font-family:var(--f-title);font-weight:700;font-size:1.1rem;letter-spacing:.14em;color:var(--accent-strong);border:2px solid var(--accent-strong);border-radius:3px;padding:.18em .55em .1em .7em;line-height:1.3;transform:rotate(-4deg);white-space:nowrap;opacity:.92}
+
+/* いま募集している枠 */
+.recruit{background:var(--bg);border:1px solid var(--rule);border-radius:4px;padding:clamp(1.4rem,3vw,2rem) clamp(1.4rem,3.5vw,2.4rem);margin-bottom:3.2rem}
+.recruit h3,.recruit .note{max-width:56rem}
+.recruit h3{font-size:var(--s2);margin-bottom:1rem;line-height:1.45}
+.slots{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.slots li{display:grid;grid-template-columns:10.5rem minmax(0,1fr);gap:.2rem 1rem;align-items:baseline;line-height:1.7}
+.slots b{font-weight:700}
+.slots span{color:var(--muted)}
+.recruit .note{color:var(--muted);font-size:var(--s-1);margin-top:1.1rem;line-height:1.75}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.4rem}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:.7em 1.2em;border-radius:2px;text-decoration:none;font-weight:700;font-size:var(--s-1);border:1.5px solid var(--ink);color:var(--ink);background:transparent;font-family:var(--f-title);cursor:pointer;line-height:1.4}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);border-radius:0}
+.btn.primary:hover{color:var(--accent-ink);filter:brightness(1.08)}
+.btn:hover{color:inherit}
+@media (max-width:760px){.slots li{grid-template-columns:minmax(0,1fr)}.slots li span{display:block;margin-top:-.2rem}}
+
+.join-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3rem}
+.join-grid > div{display:flex;flex-direction:column}
+.join-grid > div > ul,.join-grid > div > ol{flex:1;align-content:space-between}
+.wanted{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+.wanted li{display:grid;grid-template-columns:1.6rem minmax(0,1fr);gap:.6rem;font-size:var(--s0);line-height:1.7}
+.wanted li::before{content:"";width:.8rem;height:.8rem;margin-top:.5em;border-radius:50%;background:var(--accent)}
+.flow{list-style:none;margin:0;padding:0;counter-reset:f;display:grid;gap:0}
+.flow li{counter-increment:f;display:grid;grid-template-columns:2.6rem minmax(0,1fr);gap:.6rem;padding:.75rem 0;border-top:1px solid var(--rule)}
+.flow li::before{content:counter(f);font-family:var(--f-title);color:var(--accent);font-size:var(--s2);line-height:1}
+.flow b{display:block;font-size:var(--s0);line-height:1.6;margin-bottom:.15rem}
+.flow span{display:block;color:var(--muted);font-size:var(--s-1);line-height:1.6;text-wrap:pretty}
+.skills{margin-top:3.2rem}
+.skills h3{font-family:var(--f-voice);font-weight:500;font-size:var(--s2);margin-bottom:1.2rem}
+.skill-list{list-style:none;margin:0;padding:0;display:grid}
+.skill-list li{display:grid;grid-template-columns:17rem minmax(0,1fr);gap:1.5rem;padding:1rem 0;border-top:1px solid var(--rule)}
+.skill-list li:last-child{border-bottom:1px solid var(--rule)}
+.skill-list .sk-head{font-family:var(--f-voice);font-weight:500;font-size:var(--s0);line-height:1.6}
+.skill-list .sk-body{line-height:1.9}
+@media (max-width:760px){.skill-list li{grid-template-columns:minmax(0,1fr);gap:.2rem}}
+.join-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin:2.5rem 0}
+.motto{font-family:var(--f-title);font-weight:700;font-size:clamp(1.25rem,3vw,1.75rem);line-height:1.6;letter-spacing:.01em;margin:3rem auto 0;max-width:30em;text-align:center;text-wrap:balance}
+.motto em{font-style:normal;color:var(--accent)}
+/* 1文目は1行に収まらない幅が多いので、句ごとに .nb で包み「この／地球で」のような切れ方をさせない */
+.nb{display:inline-block}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--rule)}
+.fact .n{font-family:var(--f-title);font-weight:900;font-size:var(--s3);color:var(--accent);line-height:1.1}
+.fact .l{font-size:var(--s-1);color:var(--muted);line-height:1.6;margin-top:.3rem}
+
+/* 入り口 — 学部生／他大学／博士・留学生／社会人 */
+.routes{margin-top:3.2rem;padding-top:2.5rem;border-top:1px solid var(--rule)}
+.routes h3{font-size:var(--s2);margin-bottom:.3rem}
+.routes .lead{color:var(--muted);font-size:var(--s-1);max-width:46rem;margin-bottom:1.6rem}
+.route-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 3rem}
+.route{padding:1.4rem 0 1.7rem;border-top:1px solid var(--rule);display:grid;gap:.6rem;align-content:start}
+.route h4{font-family:var(--f-voice);font-weight:500;font-size:var(--s1);margin:0;line-height:1.4}
+.route p{font-size:var(--s0);line-height:1.8}
+.route .go{font-weight:700;font-size:var(--s-1);margin-top:.1rem}
+.route .go a{text-decoration:none;color:var(--accent-strong)}
+.route .go a:hover{text-decoration:underline}
+
+/* 見学・連絡 */
+.visit{margin-top:3.2rem;padding-top:2.5rem;border-top:1px solid var(--rule)}
+.visit > p,.visit ul,.visit .mail{max-width:56rem}
+.visit h3{font-size:var(--s2);margin-bottom:.8rem}
+.visit h4{font-family:var(--f-body);font-weight:700;font-size:var(--s0);margin:1.6rem 0 .4rem}
+.visit ul{margin:0;padding-left:1.2em;line-height:1.8}
+.visit ul li{margin:.1rem 0}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;font-size:clamp(1rem,3.4vw,1.25rem);overflow-wrap:anywhere;margin-top:1.6rem}
+.copy{font:inherit;font-family:var(--f-body);font-size:var(--s-1);font-weight:700;padding:.45em 1em;border-radius:3px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.copy:hover{background:var(--ink);color:var(--bg)}
+.visit .small{color:var(--muted);font-size:var(--s-1);margin-top:.8rem;line-height:1.7}
+
+/* people — 一緒に研究している学生（一覧は members.html） */
+.people{margin-top:3.2rem;padding-top:2.5rem;border-top:1px solid var(--rule)}
+.people h3{font-size:var(--s2);margin-bottom:.6rem}
+.people p{max-width:46rem;margin-bottom:1.4rem}
+.closing{margin-top:2.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.6rem}
+.closing p{font-family:var(--f-title);font-weight:700;font-size:var(--s2);line-height:1.45}
+@media (max-width:760px){.closing p{font-size:1.3rem}}
+
+@media (max-width:760px){.join-grid{grid-template-columns:minmax(0,1fr)}.facts{grid-template-columns:minmax(0,1fr)}.join-photos{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.join-photos .photo:last-child{display:none}.route-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* 写真枠。本番は <figure class="photo"><img src="img/…/xxx.jpg" alt="…"><figcaption>…</figcaption></figure>、
+   仮の枠は <div class="photo ph-…"><span>…</span></div>（ph-… が付いている間だけ「写真を差し替え」が出る） */
+.photo{aspect-ratio:3/2;max-width:100%;margin:0;border-radius:4px;display:flex;align-items:flex-end;padding:.7rem .8rem;font-size:.75rem;color:#fff;line-height:1.45;position:relative;overflow:hidden;background:#d8d0c2}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.photo span,.photo figcaption{position:relative;background:rgba(0,0,0,.38);padding:.15rem .45rem;border-radius:3px}
+.photo figcaption:empty{display:none}
+.photo[class*="ph-"]::after{content:"写真を差し替え";position:absolute;top:.6rem;right:.6rem;font-size:.65rem;background:rgba(0,0,0,.35);padding:.1rem .5rem;border-radius:3px}
+.ph-red{background:linear-gradient(180deg,#2f4a2b 0 28%,#5b3a24 28% 40%,#a8442a 40% 100%)}
+.ph-paddy{background:linear-gradient(180deg,#b9c9c4 0 35%,#6f8f5a 35% 55%,#6c6a62 55% 100%)}
+.ph-lab{background:linear-gradient(135deg,#4f6e66 0 40%,#7f9c94 40% 100%)}
+
+/* footer */
+footer{background:var(--ink);color:color-mix(in srgb,var(--bg) 70%,var(--ink));font-size:.72rem}
+footer .wrap{padding-block:1.2rem 2rem;border-top:1px solid color-mix(in srgb,var(--bg) 20%,var(--ink))}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">柴田 誠</a>
+    <nav class="nav" aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="students.html" class="join">For Students<small>募集中</small></a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html">News</a>
+      <a href="members.html">Members</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="students">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="depth mono">学生のみなさんへ</p>
+      <div class="title-row">
+        <h2>森へ、畑へ、田んぼへ。<br>一緒に研究しませんか。</h2>
+        <span class="stamp" role="img" aria-label="募集中">募集中</span>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/students/village.jpg" alt="カメルーン東部、現地の人と一緒に断面調査" width="1600" height="1067" loading="lazy">
+        <figcaption>カメルーン東部、現地の人と一緒に断面調査</figcaption>
+      </figure>
+      <p style="color:var(--ink)">森の中でも、海外の農村でも、日本の田んぼでも。現場に足を運んで、自分の手で採って、実験室で測って確かめる。そこから研究が始まります。土の色や手ざわりはもちろん、現地で見た風景、食べたもの、触れ合った人、そのすべてが感性になり、自分を形づくっていきます。そうして、研究が自分ごとになります。学んだことを生きた学問にするために、現場に通います。</p>
+      <p style="color:var(--ink)">大事にしているのは、現場に出る好奇心と、地道な分析を続ける根気です。土壌学は、手を動かしながら、走りながら、一緒に身につけていきましょう。</p>
+    </div>
+
+    <div class="recruit" id="recruit">
+      <h3>2028年4月入学の大学院生を募集しています！</h3>
+      <ul class="slots">
+        <li><b>修士課程</b><span>いまの学部3回生（2028年4月入学）</span></li>
+        <li><b>博士後期課程</b><span>4月入学・10月入学。修士で別のテーマをやってきた人も歓迎です</span></li>
+        <li><b>京大 農学部の3年生</b><span>資源生物科学科 土壌学分野への配属を考えている人</span></li>
+      </ul>
+      <p class="note">他大学からも、海外からも、社会人からも。入り口は<a href="#routes">このページの下</a>にまとめました。研究テーマは固まっていなくてかまいません。興味のある方向を教えてもらえれば、相談しながら一緒に決めていきます。</p>
+      <div class="cta">
+        <a class="btn primary" href="#visit">見学・相談のしかた →</a>
+      </div>
+    </div>
+
+    <div class="join-grid">
+      <div>
+        <h3 style="font-size:var(--s2);margin-bottom:1.2rem">こんな人を待っています！</h3>
+        <ul class="wanted">
+          <li>アジアやアフリカの農村に出かけて、現地の人と一緒に調べてみたい人</li>
+          <li>国内の生産者の農地で、現場に役立つ研究がしたい人</li>
+          <li>農業より先に、土そのものの成り立ちや自然生態系の物質循環の仕組みを知りたい人</li>
+          <li>土を掘るのが好きな人、まだ掘ったことはないけれど興味がある人</li>
+          <li>フィールド調査も実験室の分析も、手を動かして自分でやってみたい人</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:var(--s2);margin-bottom:.4rem">研究はこう進みます</h3>
+        <ol class="flow">
+          <li><div><b>調査地とテーマを決める</b><span>海外か国内か、自然か農地か、フィールドか室内か。これまでの調査地や共同研究のつながりを生かして、一緒に決めます。</span></div></li>
+          <li><div><b>現場で土や水を採取する</b><span>土や水、ガス等の試料を採ります。土の中の水や元素の動きを、その場で測ることもあります。</span></div></li>
+          <li><div><b>実験室で分析する</b><span>土壌中の養分の量や形態、微生物のはたらき、安定同位体（<sup>15</sup>N、<sup>13</sup>C）を使った追跡など。</span></div></li>
+          <li><div><b>学会で発表し、論文にする</b><span>国内外の学会で発表し、論文として世に出すところまで伴走します。</span></div></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="join-photos">
+      <figure class="photo"><img src="img/students/students-village.jpg" alt="カメルーンの村で、調査を終えて現地の仲間と記念撮影"><figcaption>カメルーンの村で、現地の仲間と</figcaption></figure>
+      <figure class="photo"><img src="img/students/field-japan.jpg" alt="水田での土壌培養実験の準備"><figcaption>水田での土壌培養実験の準備</figcaption></figure>
+      <figure class="photo"><img src="img/students/students-lab.jpg" alt="実験室でのろ過作業"><figcaption>実験室で</figcaption></figure>
+    </div>
+
+    <p class="motto"><span class="nb">数世代先も、</span><span class="nb">われわれ人類が</span><span class="nb">この地球で</span><span class="nb">食べて生きていくために。</span><br>土を<em>掘って、測って、考えます</em>。</p>
+
+    <div class="people" id="people">
+      <h3>一緒に研究している学生たち</h3>
+      <p>いま一緒に研究しているのは<span id="people-count">9人（博士1・修士6・学部2）</span>。調査地はベトナム、タイ、フィリピン、タンザニア、新潟、丹後、京都・滋賀・奈良の茶園や水田など、海外にも国内にも広がっています。一人ひとりの調査地と研究テーマ、出た論文は、学生たちのページにまとめています。</p>
+      <a class="btn" href="members.html">一緒に研究している学生たち →</a>
+    </div>
+
+    <div class="skills">
+      <h3>研究を通して、身につけてほしいこと</h3>
+      <ul class="skill-list">
+        <li><span class="sk-head">頭だけでなく、体で覚える</span><span class="sk-body">視野を広くもってよく観察する力、現地の人や仲間と話して一緒に動く力、想定外のことが起きても何とかする力。現場に通い、粘り強く実験に取り組むうちに、こうした力がまとめて鍛えられます。</span></li>
+        <li><span class="sk-head">マクロとミクロを行き来する</span><span class="sk-body">森や村、地域の農業といった大きな世界と、土の粒や微生物、元素の動きといった小さな世界。現場と実験室を往復しながら、その両方から考えます。</span></li>
+        <li><span class="sk-head">科学の進め方は、ひとつではない</span><span class="sk-body">仮説を立てて確かめるのは、科学の大事な進め方です。それに加えて、現場をよく見て記録するところから問いが生まれる研究もあります。どちらも知ったうえで、自分の研究を組み立てられるようになってほしいと思っています。</span></li>
+        <li><span class="sk-head">立場をはっきりさせて、伝える</span><span class="sk-body">科学は中立だ、という考え方があります。測った数字は、たしかに誰が測っても同じでなければなりません。一方で、何を問い、結果をどう伝えるかには、研究する人の立場が表れます。自分がどこに立っているのかを明らかにしたうえで発信することも、大切だと考えています。</span></li>
+        <li><span class="sk-head">自分なりのフィロソフィーをもつ</span><span class="sk-body">なぜこの研究をするのか、誰のための研究なのか。答えは人それぞれで、こちらから渡せるものではありません。自分なりの答えが言葉になるまで、伴走します。</span></li>
+      </ul>
+    </div>
+
+    <div class="facts" hidden></div>
+
+    <div class="routes" id="routes">
+      <h3>入り口はいくつかあります</h3>
+      <div class="route-grid">
+        <div class="route">
+          <h4>京都大学の学部生</h4>
+          <p>農学部 資源生物科学科の土壌学分野に配属されると、同じグループで研究できます。配属前の見学はもちろん、授業の質問でも、進路の相談でも、研究室（農学部総合館 S-584）に顔を出してください。3年生のうちに一度来てもらえると、卒論のテーマを一緒にゆっくり考えられます。</p>
+        </div>
+        <div class="route">
+          <h4>他大学から大学院へ</h4>
+          <p><a href="https://www.ges.kyoto-u.ac.jp/" target="_blank" rel="noopener">大学院地球環境学舎</a>（陸域生態系管理論分野）か、<a href="https://www.kais.kyoto-u.ac.jp/japanese/graduate/" target="_blank" rel="noopener">大学院農学研究科</a> 地域環境科学専攻（比較農業論分野または土壌学分野）の入試を受けて入ってもらいます。入試は例年8月。冬（1〜2月）に二次募集がある年もあります。出願の前に、必ず一度連絡をください。研究テーマと受け入れの可否を、あらかじめ一緒に確認します。これまでも他大学から来た学生が多くいます。</p>
+        </div>
+        <div class="route">
+          <h4>博士後期課程・留学生</h4>
+          <p>修士からそのまま進む人も、別の大学や分野から来る人も、社会に出てから戻ってくる人も。日本語でも英語でも指導します。学振DCや京都大学GROWプログラムの申請は、一緒に準備します。</p>
+        </div>
+        <div class="route">
+          <h4>社会人・いまの分野から離れて来る人</h4>
+          <p>地球環境学舎は、実務の経験をもつ人を受け入れることを大事にしてきた大学院です。農業の現場、行政、企業、国際協力——土に関わる仕事をしてきた人の経験は、研究室では得がたい財産です。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="visit" id="visit">
+      <h3>まずは見学に来てください</h3>
+      <p>研究室の見学や研究の相談は、時期を問わず受け付けています。京都まで来られない人はオンラインでも。見学では、研究の話を30分ほどして、実験室を見てもらい、学生とも話してもらいます。</p>
+      <h4>メールにはこれだけで十分です</h4>
+      <ul>
+        <li>お名前と、所属・学年</li>
+        <li>興味のあること（海外か国内か、森か農地か、現場中心かラボ中心か、など大まかで）</li>
+        <li>見学・相談の希望日（あれば）</li>
+      </ul>
+      <div class="mail"><span id="addr"></span><button class="copy" id="copy" type="button">アドレスをコピー</button><a class="btn primary mailto" href="index.html#contact">メールを書く</a></div>
+      <p class="small">数日のうちに返事をします。調査で山や海外にいるときは、少し遅れることがあります。</p>
+      <p class="small">どんなふうに研究を始めたのかは、<a href="https://www.ges.kyoto-u.ac.jp/ges/wp-content/pdf.js-master/web/viewer.html?file=https://www.ges.kyoto-u.ac.jp/ges/wp-content/uploads/2026/09/SANSAI_NewsLetter_No.39.pdf#page=4" target="_blank" rel="noopener">インタビュー記事</a>で話しています（地球環境学堂 Sansai Newsletter No.39、2026年9月。<a href="https://www.ges.kyoto-u.ac.jp/ges/wp-content/pdf.js-master/web/viewer.html?file=https://www.ges.kyoto-u.ac.jp/ges/wp-content/uploads/2026/09/SANSAI_NewsLetter_No.39.pdf#page=2" target="_blank" rel="noopener">English</a>）。</p>
+    </div>
+
+    <div class="closing">
+      <p>一緒に楽しく研究しましょう！！</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© Makoto Shibata · Kyoto University　·　業績データ：researchmap</div></footer>
+
+<script src="people.js"></script>
+<script>
+(function(){
+  // 学生の人数は people.js から数える（文章の調査地は手で直す）
+  const cur = ((window.PEOPLE || {}).current) || [];
+  const el = document.getElementById("people-count");
+  if (el && cur.length) {
+    const n = k => cur.filter(p => String(p.grade || "").startsWith(k)).length;
+    const parts = [["博士", n("D")], ["修士", n("M")], ["学部", n("B")]].filter(x => x[1]).map(x => x[0] + x[1]);
+    el.textContent = cur.length + "人（" + parts.join("・") + "）";
+  }
+
+  // 連絡先 — アドレスはスクリプトで組み立てる（index.html と同じ方式）
+  var u="shibata.makoto.7c",d="kyoto-u.ac.jp";
+  var addr=u+String.fromCharCode(64)+d;
+  var shown=document.getElementById("addr");
+  if(shown){shown.textContent=u+" [at] "+d;}
+  document.querySelectorAll(".mailto").forEach(function(a){
+    a.addEventListener("click",function(e){
+      e.preventDefault();
+      location.href="mailto:"+addr+"?subject="+encodeURIComponent("【見学・相談希望】");
+    });
+  });
+  var btn=document.getElementById("copy");
+  if(btn){
+    btn.addEventListener("click",function(){
+      function done(){btn.textContent="コピーしました";setTimeout(function(){btn.textContent="アドレスをコピー"},2000)}
+      function fallback(){document.getElementById("addr").textContent=addr;var r=document.createRange();r.selectNodeContents(document.getElementById("addr"));var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent="選択しました。コピーしてください"}
+      try{navigator.clipboard.writeText(addr).then(done,fallback)}catch(e){fallback()}
+    });
+  }
+})();
+</script>
+<script data-goatcounter="https://shibata-soil.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
