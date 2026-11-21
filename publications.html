@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="京都大学 大学院地球環境学堂 柴田誠（土壌学）のホームページ。アジア・アフリカの熱帯林から日本の水田まで、土の養分循環を現場で研究しています。フィールドに出たい学生を募集しています。">
+<meta property="og:title" content="業績 — 柴田誠 — 京都大学 地球環境学堂">
+<meta property="og:type" content="website">
+<style>img{max-width:100%;height:auto;display:block}[hidden]{display:none!important}body{margin:0}</style>
+<title>業績 — 柴田誠 — 京都大学 地球環境学堂</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Kiwi+Maru:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Nunito+Sans:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a soil profile read top to bottom. Left-aligned editorial column; horizon colours (Munsell) carry the identity, everything else stays quiet. */
+:root{
+  --bg:#F4EFE6;
+  --bg-alt:#ECE5D8;
+  --surface:#F4EFE6;
+  --ink:#2E2722;
+  --muted:#574C43;
+  --rule:#D9CFC0;
+  --accent:#C8622F;
+  --accent-strong:#A94F24;
+  --accent-ink:#ffffff;
+  --gley:#6F7F4E;
+  --todo-bg:#EBD9A6;--todo-fg:#6E5410;
+  --h-o:#3a2c22;--h-a:#6b3f2a;--h-b:#a8442a;--h-c:#c0623c;
+  --p-ap:#5b5650;--p-b:#7f7c74;--p-mot:#b8742f;--p-c:#6f8a80;
+  --f-voice:"Kiwi Maru",cursive;
+  --f-title:"Zen Maru Gothic","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-latin:"Nunito Sans","Zen Kaku Gothic New",sans-serif;
+  --f-mono:"IBM Plex Mono","Zen Kaku Gothic New",monospace;
+  --s-1:.8125rem;--s0:1rem;--s1:1.1875rem;--s2:1.5rem;--s3:2.125rem;--s4:clamp(2.25rem,6vw,3.75rem);
+  --wrap:68rem;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit;text-decoration-color:color-mix(in srgb,var(--accent-strong) 40%,transparent);text-underline-offset:.2em}
+a:hover{color:var(--accent-strong)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-title);font-weight:700;line-height:1.35;letter-spacing:.03em;text-wrap:balance;margin:0}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.todo{background:var(--todo-bg);color:var(--todo-fg);font-family:var(--f-body);font-size:.78em;font-weight:700;padding:.05em .45em;border-radius:3px;white-space:nowrap}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 95%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:1rem;padding-block:.6rem}
+.brand{font-family:var(--f-title);font-weight:700;font-size:var(--s1);text-decoration:none;white-space:nowrap}
+.brand small{font-family:var(--f-latin);font-weight:600;font-size:.68em;color:var(--muted);margin-left:.6em}
+.nav{display:flex;gap:1.4rem;margin-left:auto;overflow-x:auto;scrollbar-width:none;font-family:var(--f-latin);font-size:.9375rem;font-weight:600;letter-spacing:.02em}
+.nav::-webkit-scrollbar{display:none}
+.nav a{text-decoration:none;white-space:nowrap;color:var(--ink)}
+.nav a:hover{color:var(--ink)}
+.nav a.join{color:var(--accent-strong);font-weight:700}
+.nav a.join small{font-family:var(--f-title);font-weight:700;font-size:.68rem;letter-spacing:.1em;color:var(--accent-strong);border:1px solid var(--accent-strong);border-radius:2px;padding:.08em .4em 0 .5em;margin-left:.45em;line-height:1.3;vertical-align:.12em;white-space:nowrap}
+@media (max-width:760px){.brand small{display:none}.top .wrap{flex-wrap:wrap;gap:.25rem}.nav{margin-left:0;width:100%;gap:.15rem 1rem;font-size:.875rem;flex-wrap:wrap;overflow:visible}}
+
+/* sections */
+section{border-top:1px solid var(--rule)}
+section > .wrap{padding-block:clamp(3rem,7vw,5rem)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr);gap:.6rem;margin-bottom:2.2rem;max-width:44rem}
+.sec-head .depth{font-family:var(--f-body);font-weight:700;font-size:var(--s-1);color:var(--muted)}
+.sec-head h2{font-size:var(--s3)}
+.sec-head p{color:var(--muted)}
+
+/* publications */
+.pub-tools{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;margin-bottom:1.5rem}
+.tabs{display:flex;flex-wrap:wrap;gap:.4rem}
+.tab{font:inherit;font-size:var(--s-1);padding:.4em .9em;border-radius:3px;border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer}
+.tab .mono{color:var(--muted);margin-left:.35em;font-size:.9em}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tab[aria-selected="true"] .mono{color:var(--bg);opacity:.75}
+.search{margin-left:auto;min-width:0;flex:0 1 16rem}
+.search input{width:100%;font:inherit;font-size:var(--s-1);padding:.45em .9em;border-radius:3px;border:1px solid var(--rule);background:var(--surface);color:var(--ink)}
+@media (max-width:640px){.search{margin-left:0;flex:1 1 100%}}
+.pub-list{display:grid}
+.year{font-family:var(--f-title);font-weight:700;font-size:var(--s1);color:var(--ink);padding:1.4rem 0 .3rem;border-bottom:2px solid var(--ink)}
+.pub{display:grid;gap:.15rem;padding:.9rem 0;border-bottom:1px solid var(--rule);min-width:0}
+.pub .t{font-weight:700;line-height:1.55;overflow-wrap:anywhere}
+.pub .a{font-size:var(--s-1);color:var(--muted);line-height:1.6;overflow-wrap:anywhere}
+.pub .a .me{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:.2em}
+.pub .v{font-size:var(--s-1);line-height:1.6;overflow-wrap:anywhere}
+.pub .v i{font-style:italic}
+/* 発表形式のバッジ：著者行の末尾に。地色は生成りより一段濃く、文字は墨に近い色で読みやすく */
+.pub .a .form{display:inline-block;font-size:.72rem;font-weight:500;line-height:1.7;padding:0 .55em;border-radius:3px;margin-left:.8em;vertical-align:.08em;white-space:nowrap;background:#E2DACB;color:#4A3F36}
+.pub .a .form.poster{background:#DCE3CE;color:#3D4D2A}
+.pub .a .form.inv{background:#F1D9C7;color:#8C3F1C;font-weight:700}
+.pub .prize{font-family:var(--f-voice);font-weight:600;font-size:var(--s0);color:var(--accent-strong);line-height:1.6;margin-top:.2rem;overflow-wrap:anywhere}
+.pub .prize .prize-mark{display:inline-block;font-family:var(--f-body);font-size:.7rem;font-weight:700;letter-spacing:.05em;color:var(--accent-ink);background:var(--accent);padding:.1em .5em;border-radius:3px;margin-right:.6em;vertical-align:.15em}
+.pub .prize a.prize-link{color:var(--accent-strong);text-decoration-color:color-mix(in srgb,var(--accent) 50%,transparent)}
+.pub .prize a.prize-link:hover{color:var(--accent-strong)}
+.pub .t a[target="_blank"]{text-decoration-color:color-mix(in srgb,var(--accent) 50%,transparent)}
+.pub.prized{border-left:3px solid var(--accent);padding-left:calc(1.2rem - 1px)}
+.pub .badges{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.3rem}
+.badge{font-size:.75rem;padding:.05rem .5rem;border-radius:3px;background:#E8E2D8;color:var(--muted)}
+.badge.hl{background:#F3DCCB;color:#8C3F1C;font-weight:700}
+.amount{font-size:.72rem;color:var(--muted);align-self:center;margin-left:.25rem}
+.amount .mono{color:var(--ink);font-weight:700;font-size:.82rem;margin-right:.05em}
+.amount small{font-size:.9em;margin-left:.1em}
+.event-head{padding:1rem 0 .3rem;border-bottom:1px dashed var(--rule);margin-top:.8rem}
+.event-name{font-weight:700;font-size:var(--s0);line-height:1.5}
+.event-name a{text-decoration-color:color-mix(in srgb,var(--accent) 50%,transparent)}
+.event-meta{font-size:var(--s-1);color:var(--muted);line-height:1.5}
+.pub-in-event{padding-left:1.2rem;border-left:2px solid var(--rule)}
+.pub-unmatched{opacity:.7;border-left:2px dashed color-mix(in srgb,var(--accent) 40%,transparent);padding-left:1.2rem}
+.unverified{display:none;font-size:.65rem;color:var(--muted);background:color-mix(in srgb,var(--accent) 10%,transparent);padding:.05rem .4rem;border-radius:3px;margin-left:.5em;vertical-align:middle}
+[data-admin] .unverified{display:inline}
+.pub-foot{margin-top:1.5rem;font-size:var(--s-1);color:var(--muted)}
+.empty{padding:2rem 0;color:var(--muted)}
+
+/* footer */
+footer{background:var(--ink);color:color-mix(in srgb,var(--bg) 70%,var(--ink));font-size:.72rem}
+footer .wrap{padding-block:1.2rem 2rem;border-top:1px solid color-mix(in srgb,var(--bg) 20%,var(--ink))}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">柴田 誠</a>
+    <nav class="nav" aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="students.html" class="join">For Students<small>募集中</small></a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html">News</a>
+      <a href="members.html">Members</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="pubs">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="depth mono">業績</p>
+      <h2>研究業績</h2>
+      <p>原著論文・著書・学会発表・招待講演・報告書・その他・受賞・研究費。<br>学会発表は大会ごとにまとめています。</p>
+    </div>
+    <div class="pub-tools">
+      <div class="tabs" role="tablist" aria-label="業績の種類" id="tabs"></div>
+      <label class="search"><span class="mono" hidden>検索</span><input id="q" type="search" placeholder="タイトル・著者・誌名で絞り込み" aria-label="業績を絞り込み"></label>
+    </div>
+    <div class="pub-list" id="list" aria-live="polite"></div>
+    <p class="pub-foot" id="pubfoot"></p>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© Makoto Shibata · Kyoto University　·　業績データ：researchmap（<span id="upd"></span> 更新）</div></footer>
+
+<script src="events.js"></script>
+<script src="data.js"></script>
+<script>
+(function(){
+  var RM = window.RM || {papers:[],reports:[],books:[],talks:[],awards:[],projects:[]};
+  var ME = /柴田\s*誠|Shibata,?\s*M(akoto|\.|\b)|SHIBATA\s*M|Makoto\s+Shibata/i;
+  var TALK = {oral_presentation:"口頭",poster_presentation:"ポスター",invited_oral_presentation:"招待講演",nominated_symposium:"シンポジウム",public_discourse:"一般向け講演",others:"その他"};
+  var ROLE = {lead:"筆頭著者",corresponding:"責任著者",last:"最終著者"};
+  var TALK_FORM = {oral_presentation:"口頭",poster_presentation:"ポスター",invited_oral_presentation:"招待講演",nominated_symposium:"シンポジウム",public_discourse:"一般向け講演"};
+  // 題目の正規化（受賞と発表の照合用）：タグ・記号・空白を落として小文字に
+  function normT(s){return String(s||"").replace(/<[^>]+>/g,"").replace(/[\s\u3000\u00a0]+|[^\p{L}\p{N}]+/gu,"").toLowerCase()}
+  var AWARD_IDX=(RM.awards||[]).filter(function(a){return a.title}).map(function(a){return {k:normT(a.title),a:a}});
+  // 受賞月と発表月が同じか隣り合っていること（年だけの登録なら同じ年）
+  function nearDate(ad,td){
+    var am=(ad||"").match(/^(\d{4})-(\d{2})/),ty=(td||"").slice(0,4);
+    if(!am)return ty===(ad||"").slice(0,4);
+    var tm=(td||"").match(/^(\d{4})-(\d{2})/);
+    if(!tm)return ty===am[1];
+    return Math.abs((+am[1]*12+ +am[2])-(+tm[1]*12+ +tm[2]))<=1;
+  }
+  function awardsFor(p){
+    var k=normT(p.title);if(k.length<12)return[];
+    return AWARD_IDX.filter(function(x){
+      if(x.k.length<12||!nearDate(x.a.date,p.date))return false;
+      var m=Math.min(x.k.length,k.length);
+      // 片方が省略されている登録もあるので、短い方の先頭 m 文字（最低24文字）で一致を見る
+      return m>=24?x.k.slice(0,m)===k.slice(0,m):x.k===k;
+    }).map(function(x){return {name:x.a.name,url:x.a.url}}).filter(function(o,i,arr){return arr.findIndex(function(a){return a.name===o.name})===i});
+  }
+  // "The best poster award" → "The Best Poster Award"（英語の賞名だけ）
+  // "The best poster award" → "Best Poster Award"（英語の賞名は冠詞を落として語頭を大文字に）
+  function fmtAward(n){
+    n=String(n||"").trim();
+    if(/[\u3040-\u9fff]/.test(n))return n;
+    n=n.replace(/^the\s+/i,"");
+    // 括弧の中は登録どおりに残し、外側だけ語頭を大文字に
+    return n.split(/(\([^)]*\))/).map(function(seg){
+      if(/^\(/.test(seg))return seg;
+      return seg.split(" ").map(function(w,i){return (i>0&&SMALL.test(w))?w:w.charAt(0).toUpperCase()+w.slice(1)}).join(" ");
+    }).join("");
+  }
+  function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+  // 全部大文字で登録された英語タイトルを文頭だけ大文字にする（略語・元素記号は維持）
+  var KEEP_UPPER = /^(N|C|P|S|K|SI|AL|FE|MN|CA|MG|NA|CO2|CH4|N2O|NH4|NO3|PH|SOC|SOM|DNA|RNA|GHG|SIP|PCR|USA|UK|EU|JICA|JST|SATREPS|FOSAS|DOC|DON|CEC|WRB|FAO|GIS|NDVI|UAV|LIDAR|I|II|III|IV)$/;
+  // 固有名詞（地名・土壌名など）は頭文字を大文字に戻す
+  var KEEP_CAP = /^(cameroon|cameroonian|africa|african|asia|asian|japan|japanese|thailand|thai|malaysia|malaysian|vietnam|vietnamese|tanzania|tanzanian|indonesia|india|indian|china|niigata|kyoto|kinki|east|eastern|west|western|north|northern|south|southern|central|peninsular|oxisol|oxisols|ultisol|ultisols|inceptisol|inceptisols|ferralsol|ferralsols|acrisol|acrisols|andosol|andosols|gleysol|gleysols|cambisol|cambisols|andom|pasoh|sabah|sarawak|yaound[eé]|tainai)$/;
+  function sentenceCase(s){
+    // 和文題目に O層・pH などが混じるだけのものは対象外（ラテン文字が8字以上あるものだけ）
+    if((s.match(/[A-Z]/g)||[]).length<8||s!==s.toUpperCase())return s;
+    var out=s.toLowerCase().split(/(\s+|[-–(),:;"“”']+)/).map(function(w){
+      if(!/[a-z]/.test(w))return w;
+      var up=w.toUpperCase();
+      if(KEEP_UPPER.test(up))return up==="PH"?"pH":up;
+      if(KEEP_CAP.test(w))return w.charAt(0).toUpperCase()+w.slice(1);
+      return w;
+    }).join("");
+    return out.charAt(0).toUpperCase()+out.slice(1);
+  }
+  // 同位体を上付き、分子式の数字を下付きに
+  function fmtChem(h){
+    h=h.replace(/(^|[^\w>])(13C|15N|18O|14C|2H|34S|33P|32P|36Cl|87Sr|137Cs)(?=$|[^a-z0-9])/g,function(m,a,iso){
+      var mm=iso.match(/^(\d+)([A-Z][a-z]?)$/);return a+'<sup>'+mm[1]+'</sup>'+mm[2];});
+    h=h.replace(/(^|[^\w>])(N2O|N2|CO2|CH4|H2O|NH4|NH3|NO3|NO2|PO4|SO4|O2|H2|SiO2|Al2O3|Fe2O3|CaCO3)(?=$|[^a-z0-9])/g,function(m,a,f){
+      return a+f.replace(/(\d+)/g,'<sub>$1</sub>');});
+    return h;
+  }
+  function fmtTitle(s){return fmtChem(esc(sentenceCase(s)).replace(/&lt;sup&gt;(.*?)&lt;\/sup&gt;/g,'<sup>$1</sup>').replace(/&lt;sub&gt;(.*?)&lt;\/sub&gt;/g,'<sub>$1</sub>'))}
+  // 誌名：全部大文字で登録されたものをタイトルケースに（固有の表記は例外表に）
+  var VENUE_FIX = {"SOIL":"SOIL","CATENA":"CATENA","PLOS ONE":"PLOS ONE","NPJ SUSTAINABLE AGRICULTURE":"npj Sustainable Agriculture","ISME JOURNAL":"The ISME Journal","PNAS":"PNAS"};
+  var SMALL = /^(and|of|in|the|for|on|to|a|an|de|et|&)$/i;
+  function fmtVenue(v){
+    v=(v||"").trim();if(!v)return"";
+    if(VENUE_FIX[v.toUpperCase()])return VENUE_FIX[v.toUpperCase()];
+    if(!/[A-Z]/.test(v)||v!==v.toUpperCase())return v;
+    return v.toLowerCase().split(" ").map(function(w,i){return (i>0&&SMALL.test(w))?w:w.charAt(0).toUpperCase()+w.slice(1)}).join(" ");
+  }
+  function yr(d){return (d||"").slice(0,4)||"年不明"}
+  function ym(d){var m=(d||"").match(/^(\d{4})-(\d{2})/);return m?m[1]+"."+parseInt(m[2],10):(d||"").slice(0,4)}
+  // 年度表記：2026-04-01〜2029-03-31 → 2026–2028年度
+  function fy(d){var m=(d||"").match(/^(\d{4})-(\d{2})/);if(!m)return"";var y=+m[1],mo=+m[2];return mo>=4?y:y-1}
+  function fmtFY(from,to){var a=fy(from),b=fy(to);if(!a)return"";return a===b||!b?a+"年度":a+"–"+b+"年度"}
+  function normMe(n){if(!ME.test(n))return null;return /[a-zA-Z]/.test(n)?"Shibata, M.":"柴田誠"}
+  // データ側の軽微な乱れを表示時に整える："Kurokawa,, K." / "NouvellonY" / "舟川晋也."
+  function tidyName(n){
+    n=String(n||"").trim().replace(/,\s*,/g,",").replace(/\s+,/g,",");
+    if(/[\u3040-\u9fff]/.test(n))return n.replace(/[.．]$/,"");
+    var m=n.match(/^([A-Z][a-z]+(?:-[A-Z][a-z]+)?)([A-Z][a-zA-Z]*)$/);
+    if(m)return m[1]+", "+m[2].charAt(0)+".";
+    return n;
+  }
+  function auth(list){return (list||[]).map(function(n){n=tidyName(n);var m=normMe(n);return m!=null?'<span class="me">'+esc(m)+'</span>':esc(n)}).join(", ")}
+  function link(p){var u=p.doi?"https://doi.org/"+p.doi:p.url;return u?' <a href="'+esc(u)+'" target="_blank" rel="noopener">'+(p.doi?"DOI":"リンク")+' ↗</a>':""}
+  // 招待講演・シンポジウム・一般向け講演は学会発表から切り出して別タブに
+  function isInvited(p){return !!p.invited||/invited|nominated|public_discourse/.test(p.type||"")}
+  var TALKS=RM.talks.filter(function(p){return !isInvited(p)}), INVITED=RM.talks.filter(isInvited);
+  var INV_FORM={invited_oral_presentation:"招待講演",nominated_symposium:"シンポジウム",public_discourse:"講演"};
+  var KINDS = [
+    {id:"papers",label:"原著論文",items:RM.papers,row:function(p){
+      var v=[p.venue?'<i>'+esc(fmtVenue(p.venue))+'</i>':"",p.vol?esc(p.vol)+(p.no?"("+esc(p.no)+")":""):"",esc(p.pages||"")].filter(Boolean).join(", ");
+      var b=[];(p.roles||[]).forEach(function(r){if(ROLE[r])b.push('<span class="badge hl">'+ROLE[r]+'</span>')});
+      if(p.invited)b.push('<span class="badge">招待</span>');
+      return '<p class="t">'+fmtTitle(p.title)+'</p><p class="a">'+auth(p.authors)+'</p><p class="v">'+v+link(p)+'</p>'+(b.length?'<div class="badges">'+b.join("")+'</div>':"");}},
+    {id:"books",label:"著書",items:RM.books,row:function(p){
+      var chap=p.chapter||p.part||"";
+      var pm=(p.part||"").match(/pp?\.\s*([\d]+\s*[–-]\s*[\d]+|\d+)/);
+      var pages=pm?"pp. "+pm[1].replace(/\s*[–-]\s*/,"–"):"";
+      var a=p.authors&&p.authors.length?auth(p.authors):"";
+      var inBook=p.editors&&p.editors.length?'In: '+auth(p.editors)+(p.editors.length>1?' (eds.) ':' (ed.) '):"";
+      var tail=[p.publisher?esc(p.publisher):"",pages].filter(Boolean).join(", ");
+      var b=p.role==="contributor"?'<div class="badges"><span class="badge">分担執筆</span></div>':"";
+      return '<p class="t">'+fmtTitle(chap)+'</p>'+(a?'<p class="a">'+a+'</p>':'')+'<p class="v">'+inBook+'<i>'+esc(p.title)+'</i>'+(tail?", "+tail:"")+link(p)+'</p>'+b;}},
+    {id:"talks",label:"学会発表",items:TALKS,grouped:true,row:function(p){
+      // 発表形式は小さく添えるだけ（招待講演だけ色を付ける）
+      var form="";
+      if(p.invited&&!/invited/.test(p.type))form='<span class="form inv">招待講演</span>';
+      else if(TALK_FORM[p.type])form='<span class="form'+(/invited|nominated/.test(p.type)?' inv':/poster/.test(p.type)?' poster':'')+'">'+TALK_FORM[p.type]+'</span>';
+      // 受賞は「受賞」タブのデータと題目で照合して、発表のすぐ下に大きく出す
+      var prizes=awardsFor(p);
+      if(!prizes.length&&p.note)prizes=[{name:p.note}];
+      var ph=prizes.map(function(o){var n=typeof o==="string"?o:o.name;var u=o&&o.url;var label=esc(fmtAward(n));return '<p class="prize"><span class="prize-mark">受賞</span>'+(u?'<a href="'+esc(u)+'" target="_blank" rel="noopener" class="prize-link">'+label+'</a>':label)+'</p>'}).join("");
+      return '<p class="t">'+fmtTitle(p.title)+link(p)+'</p><p class="a">'+auth(p.authors)+form+'</p>'+ph;},
+      cls:function(p){return (awardsFor(p).length||p.note)?" prized":""}},
+    {id:"invited",label:"招待講演・シンポジウム",items:INVITED,row:function(p){
+      var ev=p.event_id&&EVENTS[p.event_id];
+      var evName=(p.event||"").replace(/（\d{4}[^）]*）\s*$/,"");   // 末尾の（日付）を落とす
+      var meta=[];
+      if(ev){meta.push(fmtPeriod(ev.start,ev.end));var loc=eventLoc(ev);if(loc)meta.push(loc)}
+      else if(p.date)meta.push(fmtPeriod(p.date));
+      var form=INV_FORM[p.type]?'<span class="form">'+INV_FORM[p.type]+'</span>':"";
+      return '<p class="t">'+fmtTitle(p.title)+'</p><p class="a">'+auth(p.authors)+form+'</p>'
+        +(evName?'<p class="v">'+esc(evName)+'</p>':"")
+        +(meta.length?'<p class="v mono" style="color:var(--muted)">'+meta.join("　")+'</p>':"");}},
+    {id:"reports",label:"報告書・その他",items:RM.reports,row:function(p){
+      // researchmap で巻・号にページが入っている場合（例: vol=188, no=193, pages=空）を救済
+      var vol=p.vol||"",no=p.no||"",pages=p.pages||"";
+      if(!pages&&/^\d+$/.test(vol)&&/^\d+$/.test(no)&&+no>+vol&&+vol>50){pages=vol+"–"+no;vol="";no=""}
+      var v=[p.venue?'<i>'+esc(fmtVenue(p.venue))+'</i>':"",vol?esc(vol)+(no?"("+esc(no)+")":""):"",esc(pages)].filter(Boolean).join(", ");
+      return '<p class="t">'+fmtTitle(p.title)+'</p><p class="a">'+auth(p.authors)+'</p><p class="v">'+v+link(p)+'</p>';}},
+    {id:"awards",label:"受賞",items:RM.awards,row:function(p){
+      var aname=esc(fmtAward(p.name));if(p.url)aname='<a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+aname+'</a>';
+      return '<p class="t">'+aname+'　<span style="font-weight:400;color:var(--muted)">'+esc(p.assoc)+'</span></p>'+(p.title?'<p class="v">「'+fmtTitle(p.title)+'」</p>':"")+'<p class="a"><span class="mono" style="margin-right:.8em">'+esc(ym(p.date))+'</span>'+auth(p.winners)+'</p>';}},
+    {id:"projects",label:"研究費",items:RM.projects,row:function(p){
+      var pi=ME.test(p.pi);
+      var sys=p.category?esc(p.category):esc(p.system);
+      var isJsps=p.system&&/科学研究費/.test(p.system);
+      var scheme=isJsps&&p.category?"科学研究費助成事業 ":(p.system&&p.category&&p.system.indexOf(p.category)<0)?esc(p.system)+" ":"";
+      var kaken=p.url?' <a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+(/kaken\.nii/.test(p.url)?"KAKEN":"リンク")+' ↗</a>':"";
+      // 配分額（万円）。分担の場合は自分の分担額
+      var amt=p.amount?'<span class="amount"><span class="mono">'+Number(p.amount).toLocaleString("ja-JP")+'</span>万円'+(pi?'':'<small>（分担額）</small>')+'</span>':"";
+      var badges=[ '<span class="badge'+(pi?' hl':'')+'">'+(pi?'研究代表者':'研究分担者（代表：'+esc(p.pi)+'）')+'</span>' ];
+      if(amt)badges.push(amt);
+      return '<p class="t">'+esc(p.title)+'</p><p class="v">'+[scheme+sys,esc(p.org)].filter(Boolean).join(" · ")+'　<span class="mono" style="color:var(--muted)">'+esc(fmtFY(p.from,p.to))+'</span>'+kaken+'</p><div class="badges">'+badges.join("")+'</div>';}}
+  ];
+  var cur="papers", tabs=document.getElementById("tabs"), list=document.getElementById("list"), q=document.getElementById("q");
+  KINDS.forEach(function(k){
+    var b=document.createElement("button");b.className="tab";b.type="button";b.setAttribute("role","tab");b.id="tab-"+k.id;
+    b.innerHTML=k.label+'<span class="mono">'+(k.items||[]).length+'</span>';
+    b.addEventListener("click",function(){cur=k.id;render()});tabs.appendChild(b);
+  });
+  var EVENTS = RM.events || {};
+  var LECT_KINDS = {lecture:1,seminar:1,other:1};
+  function dateKey(p){return p.date||p.from||""}
+  function pad2(n){return("0"+n).slice(-2)}
+  function fmtPeriod(s,e){
+    if(!s)return"";
+    var sp=s.split("-"),ep=(e||s).split("-");
+    if(sp.length<3)return sp.join(".");
+    var r=sp[0]+"."+pad2(sp[1])+"."+pad2(sp[2]);
+    if(e&&e!==s){
+      if(sp[0]===ep[0]&&sp[1]===ep[1])r+="\u2013"+pad2(ep[2]);
+      else r+="\u2013"+ep[0]+"."+pad2(ep[1])+"."+pad2(ep[2]);
+    }
+    return r;
+  }
+  var COUNTRY_NAME={CN:"China",KR:"Korea",TW:"Taiwan",VN:"Vietnam",IN:"India",AU:"Australia",BR:"Brazil",AT:"Austria",US:"USA",CM:"Cameroon",DE:"Germany",FR:"France",TH:"Thailand"};
+  function eventLoc(ev){
+    if(ev.format==="online")return"オンライン";
+    var parts=[ev.venue,ev.city].filter(Boolean).map(esc);
+    if(ev.country&&ev.country!=="JP"){var cn=COUNTRY_NAME[ev.country]||ev.country;if(parts.length)parts[parts.length-1]+=", "+cn;else parts.push(cn)}
+    return parts.join("・");
+  }
+  function eventHeadHtml(ev){
+    var evName=ev.url?'<a href="'+esc(ev.url)+'" target="_blank" rel="noopener">'+esc(ev.name)+'</a>':esc(ev.name);
+    var period=fmtPeriod(ev.start,ev.end);
+    var loc=eventLoc(ev);
+    var admin=document.body.hasAttribute("data-admin");
+    var vflag=(!ev.verified&&admin)?'<span class="unverified">要確認</span>':"";
+    var h='<div class="event-head"><p class="event-name">'+evName+vflag+'</p>';
+    h+='<p class="event-meta mono">';
+    if(period)h+=period;
+    if(ev.cancelled)h+="　開催中止";
+    else if(loc)h+="　"+loc;
+    h+="</p></div>";
+    return h;
+  }
+  // 研究費：いま動いているもの（代表→分担、各開始年度の新しい順）と、終了したもの（年度の新しい順）に分ける
+  function renderProjects(items,rowFn){
+    var today=new Date().toISOString().slice(0,10);
+    var active=[],done=[];
+    items.forEach(function(p){((p.to||"")>=today?active:done).push(p)});
+    var pis=active.filter(function(p){return ME.test(p.pi)}),cos=active.filter(function(p){return !ME.test(p.pi)});
+    var byStart=function(a,b){return (b.from||"")<(a.from||"")?-1:(b.from||"")>(a.from||"")?1:0};
+    pis.sort(byStart);cos.sort(byStart);done.sort(byStart);
+    var html="";
+    if(active.length){
+      html+='<h3 class="year">いま動いているもの</h3>';
+      pis.concat(cos).forEach(function(p){html+='<article class="pub">'+rowFn(p)+'</article>'});
+    }
+    if(done.length){
+      html+='<h3 class="year">終了したもの</h3>';
+      done.forEach(function(p){html+='<article class="pub">'+rowFn(p)+'</article>'});
+    }
+    return html;
+  }
+  function renderGrouped(items,rowFn,clsFn){
+    var cls=clsFn||function(){return""};
+    var html="",lastYr=null;
+    // 大会グループと講演・セミナー
+    var evGroups={},evOrder=[],lectGroups={},lectOrder=[],noEv=[];
+    items.forEach(function(p){
+      var eid=p.event_id;
+      if(eid&&EVENTS[eid]){
+        var ev=EVENTS[eid];
+        if(LECT_KINDS[ev.kind]){
+          if(!lectGroups[eid]){lectGroups[eid]=[];lectOrder.push(eid)}
+          lectGroups[eid].push(p);
+        }else{
+          if(!evGroups[eid]){evGroups[eid]=[];evOrder.push(eid)}
+          evGroups[eid].push(p);
+        }
+      }else{noEv.push(p)}
+    });
+    // 大会と、マスター未登録の単独発表を、開始日の新しい順に1本の流れで並べる
+    var groups=evOrder.map(function(eid){return {start:EVENTS[eid].start||"",eid:eid}});
+    noEv.forEach(function(p){groups.push({start:dateKey(p),single:p})});
+    groups.sort(function(a,b){return b.start.localeCompare(a.start)});
+    groups.forEach(function(g){
+      var y=yr(g.start);
+      if(y!==lastYr){html+='<h3 class="year">'+y+'</h3>';lastYr=y}
+      if(g.single){
+        var p=g.single;
+        html+='<article class="pub pub-unmatched'+cls(p)+'">'+rowFn(p)+'<p class="v" style="color:var(--muted)">'+esc(p.event||"")+'</p></article>';
+        return;
+      }
+      var ev=EVENTS[g.eid],talks=evGroups[g.eid];
+      html+=eventHeadHtml(ev);
+      talks.sort(function(a,b){return(a.date||"").localeCompare(b.date||"")});
+      talks.forEach(function(p){html+='<article class="pub pub-in-event'+cls(p)+'">'+rowFn(p)+'</article>'});
+    });
+    // 講演・セミナーなど
+    if(lectOrder.length){
+      html+='<h3 class="year" style="color:var(--muted)">講演・セミナーなど</h3>';
+      lectOrder.sort(function(a,b){return(EVENTS[b].start||"").localeCompare(EVENTS[a].start||"")});
+      lectOrder.forEach(function(eid){
+        var ev=EVENTS[eid],talks=lectGroups[eid];
+        html+=eventHeadHtml(ev);
+        talks.forEach(function(p){html+='<article class="pub pub-in-event'+cls(p)+'">'+rowFn(p)+'</article>'});
+      });
+    }
+    return html;
+  }
+  function render(){
+    var k=KINDS.filter(function(x){return x.id===cur})[0], term=(q.value||"").trim().toLowerCase();
+    KINDS.forEach(function(x){document.getElementById("tab-"+x.id).setAttribute("aria-selected",x.id===cur)});
+    var items=(k.items||[]).filter(function(p){return !term||JSON.stringify(p).toLowerCase().indexOf(term)>=0});
+    if(!items.length){list.innerHTML='<p class="empty">該当する項目はありません。</p>';return}
+    var html;
+    if(k.grouped){
+      html=renderGrouped(items,k.row,k.cls);
+    }else if(k.id==="projects"){
+      html=renderProjects(items,k.row);
+    }else{
+      html="";var last=null;
+      items.forEach(function(p){var y=yr(dateKey(p));if(y!==last){html+='<h3 class="year">'+y+'</h3>';last=y}html+='<article class="pub">'+k.row(p)+'</article>'});
+    }
+    list.innerHTML=html;
+    document.getElementById("pubfoot").textContent=items.length+" 件を表示"+(cur==="projects"?"　｜　金額は自分への配分額（万円）。分担者の場合は分担額を示します。":"");
+  }
+  q.addEventListener("input",render);
+  render();
+  document.getElementById("upd").textContent=(RM.updated||"").replace(/-/g,".");
+})();
+</script>
+
+<script data-goatcounter="https://shibata-soil.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
