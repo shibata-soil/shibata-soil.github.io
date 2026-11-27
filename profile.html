@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="京都大学 大学院地球環境学堂 柴田誠（土壌学）のホームページ。アジア・アフリカの熱帯林から日本の水田まで、土の養分循環を現場で研究しています。フィールドに出たい学生を募集しています。">
+<meta property="og:title" content="プロフィール — 柴田誠 — 京都大学 地球環境学堂">
+<meta property="og:type" content="website">
+<style>img{max-width:100%;height:auto;display:block}[hidden]{display:none!important}body{margin:0}</style>
+<title>プロフィール — 柴田誠 — 京都大学 地球環境学堂</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Kiwi+Maru:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Nunito+Sans:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a soil profile read top to bottom. Left-aligned editorial column; horizon colours (Munsell) carry the identity, everything else stays quiet. */
+:root{
+  --bg:#F4EFE6;
+  --bg-alt:#ECE5D8;
+  --surface:#F4EFE6;
+  --ink:#2E2722;
+  --muted:#574C43;
+  --rule:#D9CFC0;
+  --accent:#C8622F;
+  --accent-strong:#A94F24;
+  --accent-ink:#ffffff;
+  --gley:#6F7F4E;
+  --todo-bg:#EBD9A6;--todo-fg:#6E5410;
+  --h-o:#3a2c22;--h-a:#6b3f2a;--h-b:#a8442a;--h-c:#c0623c;
+  --p-ap:#5b5650;--p-b:#7f7c74;--p-mot:#b8742f;--p-c:#6f8a80;
+  --f-voice:"Kiwi Maru",cursive;
+  --f-title:"Zen Maru Gothic","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-latin:"Nunito Sans","Zen Kaku Gothic New",sans-serif;
+  --f-mono:"IBM Plex Mono","Zen Kaku Gothic New",monospace;
+  --s-1:.8125rem;--s0:1rem;--s1:1.1875rem;--s2:1.5rem;--s3:2.125rem;--s4:clamp(2.25rem,6vw,3.75rem);
+  --wrap:68rem;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit;text-decoration-color:color-mix(in srgb,var(--accent-strong) 40%,transparent);text-underline-offset:.2em}
+a:hover{color:var(--accent-strong)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-title);font-weight:700;line-height:1.35;letter-spacing:.03em;text-wrap:balance;margin:0}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.todo{background:var(--todo-bg);color:var(--todo-fg);font-family:var(--f-body);font-size:.78em;font-weight:700;padding:.05em .45em;border-radius:3px;white-space:nowrap}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 95%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:1rem;padding-block:.6rem}
+.brand{font-family:var(--f-title);font-weight:700;font-size:var(--s1);text-decoration:none;white-space:nowrap}
+.brand small{font-family:var(--f-latin);font-weight:600;font-size:.68em;color:var(--muted);margin-left:.6em}
+.nav{display:flex;gap:1.4rem;margin-left:auto;overflow-x:auto;scrollbar-width:none;font-family:var(--f-latin);font-size:.9375rem;font-weight:600;letter-spacing:.02em}
+.nav::-webkit-scrollbar{display:none}
+.nav a{text-decoration:none;white-space:nowrap;color:var(--ink)}
+.nav a:hover{color:var(--ink)}
+.nav a.join{color:var(--accent-strong);font-weight:700}
+.nav a.join small{font-family:var(--f-title);font-weight:700;font-size:.68rem;letter-spacing:.1em;color:var(--accent-strong);border:1px solid var(--accent-strong);border-radius:2px;padding:.08em .4em 0 .5em;margin-left:.45em;line-height:1.3;vertical-align:.12em;white-space:nowrap}
+@media (max-width:760px){.brand small{display:none}.top .wrap{flex-wrap:wrap;gap:.25rem}.nav{margin-left:0;width:100%;gap:.15rem 1rem;font-size:.875rem;flex-wrap:wrap;overflow:visible}}
+
+/* sections */
+section{border-top:1px solid var(--rule)}
+section > .wrap{padding-block:clamp(3rem,7vw,5rem)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr);gap:.6rem;margin-bottom:2.2rem;max-width:44rem}
+.sec-head .depth{font-family:var(--f-body);font-weight:700;font-size:var(--s-1);color:var(--muted)}
+.sec-head h2{font-size:var(--s3)}
+.sec-head p{color:var(--muted)}
+
+/* profile */
+/* 写真の列はページ幅に対する割合で持つ。幅が狭くなると写真が細くなり、高さは文章に合わせて切り抜く（学生募集ページの冒頭と同じ動き） */
+.prof-head{grid-template-columns:38% minmax(0,1fr);gap:2.4rem;align-items:center;max-width:none}
+.prof-head>div{display:grid;gap:.6rem}
+/* 写真は文章の高さまで伸びるが、幅の1.2倍より縦長にはしない（それ以上細くすると水牛が写真から消えるため）。
+   それでも文章のほうが高いときは、写真を文章の下端に揃える（上揃えにしない） */
+.prof-photo{position:relative;margin:0;align-self:end;height:100%;max-height:calc((100vw - max(16px,env(safe-area-inset-left,0px)) - max(16px,env(safe-area-inset-right,0px)))*.456)}
+.prof-photo figcaption{position:absolute;left:.7rem;bottom:.7rem;max-width:calc(100% - 1.4rem);font-size:12px;line-height:1.45;color:#fff;background:rgba(0,0,0,.38);padding:.15rem .45rem;border-radius:3px}
+/* 切り抜く位置：左（木の側）から先に削り、本人が欠けない範囲（写真幅の15%まで）で止める。残りは右（水牛の側）から削る。幅ごとに決め打ち */
+.portrait{display:block;width:100%;height:100%;min-height:100%;object-fit:cover;object-position:right center;border-radius:0}
+@media (max-width:1087px){.portrait{object-position:55% center}}
+@media (max-width:999px){.portrait{object-position:36% center}}
+@media (max-width:899px){.portrait{object-position:33% center}}
+/* 写真が細くなる幅では、文章の行間を詰めて写真と高さを揃える */
+@media (min-width:761px) and (max-width:960px){.prof-head>div{gap:.35rem}.prof-head>div>p{line-height:1.5}.prof-head .depth{line-height:1.4}}
+@media (max-width:760px){.prof-head{grid-template-columns:minmax(0,1fr);gap:1.2rem}.prof-photo{align-self:start;height:auto;max-height:none}.portrait{height:auto;min-height:0;max-width:400px}}
+.prof-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:2.5rem}
+.cv{list-style:none;margin:0;padding:0;display:grid}
+.cv li{display:grid;grid-template-columns:8rem minmax(0,1fr);gap:.75rem;padding:.6rem 0;border-top:1px solid var(--rule);font-size:var(--s-1)}
+.cv li>span:last-child{word-break:keep-all;overflow-wrap:anywhere}
+.cv .mono{color:var(--muted);white-space:nowrap}
+.cv li.now{font-weight:700;border-bottom:1px solid var(--rule)}
+.cv li.now .mono{color:var(--accent-strong)}
+.side{display:flex;flex-direction:column;gap:2rem}
+/* 2列のとき：Tシャツの写真は右の列の下端に寄せ、左の文章の最終行と下を揃える（6px は行の下の空きの分） */
+@media (min-width:961px){.side-photo{margin-top:auto;margin-bottom:.375rem}}
+.cv-after{margin-top:2.4rem}
+.side h3{font-size:var(--s1);margin-bottom:.6rem}
+.side p,.side li{font-size:var(--s-1);line-height:1.8}
+.side p a{display:inline-block}
+.side ul{margin:0;padding-left:1.2em}
+.metrics{display:flex;flex-wrap:wrap;gap:1.6rem}
+.metrics div{display:grid}
+.metrics b{font-family:var(--f-title);font-size:var(--s2);line-height:1.2}
+.metrics span{font-size:.75rem;color:var(--muted)}
+.ids{display:flex;flex-wrap:wrap;gap:.5rem}
+.ids a{font-size:var(--s-1);padding:.3em .8em;border:1px solid var(--rule);border-radius:3px;text-decoration:none}
+@media (max-width:960px){.prof-grid{grid-template-columns:minmax(0,1fr)}.side img[src*="shibata-riceday"]{max-width:406px}}
+/* スマホでは写真を本文と同じ幅いっぱいに（学生募集ページの冒頭写真と同じ動き） */
+@media (max-width:560px){.portrait,.side img[src*="shibata-riceday"]{max-width:none}}
+@media (max-width:420px){.cv li{grid-template-columns:minmax(0,1fr);gap:0}}
+
+/* footer */
+footer{background:var(--ink);color:color-mix(in srgb,var(--bg) 70%,var(--ink));font-size:.72rem}
+footer .wrap{padding-block:1.2rem 2rem;border-top:1px solid color-mix(in srgb,var(--bg) 20%,var(--ink))}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">柴田 誠</a>
+    <nav class="nav" aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="students.html" class="join">For Students<small>募集中</small></a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html">News</a>
+      <a href="members.html">Members</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="profile">
+  <div class="wrap">
+    <div class="sec-head prof-head">
+      <figure class="prof-photo"><img class="portrait" src="img/profile/shibata-buffalo.jpg" alt="フィリピンの調査地で、水牛と" width="1200" height="800"><figcaption>フィリピン・ルソン島の調査地で、水牛と（2026年）</figcaption></figure>
+      <div>
+      <p class="depth mono">プロフィール</p>
+      <h2>柴田 誠　<span style="font-family:var(--f-latin);font-weight:700;font-size:.55em;color:var(--muted)">SHIBATA Makoto</span></h2>
+      <p style="color:var(--ink)">函館から約20 km、道南の上磯町（現・北斗市）の茂辺地という田舎で、のんびり育ったみたいです。小学校から高校まで野球、中学では相撲（全道大会準優勝・団体戦中堅）、大学ではヨット部でスナイプ級（七大戦優勝）、強風が好きでした。持久走は苦手ですが、スポーツは見るのもやるのも好きです。ほんの少しでも、世の中が平和でより良くなることに役立てたら、というのが夢です。腰痛に負けない！</p>
+      <p style="font-size:13px;color:var(--muted)">土に興味を持ったきっかけや、これまでの調査のことは、<a href="https://www.ges.kyoto-u.ac.jp/ges/wp-content/pdf.js-master/web/viewer.html?file=https://www.ges.kyoto-u.ac.jp/ges/wp-content/uploads/2026/09/SANSAI_NewsLetter_No.39.pdf#page=4" target="_blank" rel="noopener">インタビュー記事</a>でも話しています（地球環境学堂 Sansai Newsletter No.39、2026年9月）。</p>
+      </div>
+    </div>
+    <div class="prof-grid">
+      <div>
+        <h3 style="font-size:var(--s1);margin-bottom:.6rem">経歴</h3>
+        <ul class="cv">
+          <li><span class="mono">昭和62年12月</span><span>函館市生まれ</span></li>
+          <li><span class="mono">2000.04–2003.03</span><span><a href="https://hokuto.ed.jp/mosyo-chu/" target="_blank" rel="noopener">上磯町立茂辺地中学校</a></span></li>
+          <li><span class="mono">2003.04–2006.02</span><span><a href="https://www.h-lasalle.ed.jp/shs/" target="_blank" rel="noopener">函館ラ・サール高校</a></span></li>
+          <li><span class="mono">2006.04–2010.03</span><span>京都大学 農学部 <a href="https://www.kais.kyoto-u.ac.jp/japanese/undergraduate/dep_biosci/" target="_blank" rel="noopener">資源生物科学科</a></span></li>
+          <li><span class="mono">2010.04–2012.03</span><span>京都大学 <a href="https://www.kais.kyoto-u.ac.jp/" target="_blank" rel="noopener">大学院農学研究科</a> <a href="https://www.est.kais.kyoto-u.ac.jp/" target="_blank" rel="noopener">地域環境科学専攻</a> 修士課程</span></li>
+          <li><span class="mono">2012.04–2015.03</span><span>同 博士後期課程</span></li>
+          <li><span class="mono">2013.04–2015.03</span><span><a href="https://www.jsps.go.jp/j-pd/" target="_blank" rel="noopener">日本学術振興会 特別研究員</a>（DC2）</span></li>
+          <li><span class="mono">2015.04–2016.03</span><span>京都大学 <a href="https://www.africa.kyoto-u.ac.jp/" target="_blank" rel="noopener">アフリカ地域研究資料センター</a> 研究員（<a href="https://www.jst.go.jp/global/kadai/h2209_cameroun.html" target="_blank" rel="noopener">SATREPS</a>）</span></li>
+          <li><span class="mono">2016.04–2018.03</span><span>京都大学 <a href="https://www.ges.kyoto-u.ac.jp/" target="_blank" rel="noopener">大学院地球環境学堂</a> 研究員</span></li>
+          <li><span class="mono">2017.10–2018.03</span><span><a href="https://nafu.ac.jp/" target="_blank" rel="noopener">新潟食料農業大学</a> 設置準備室 職員</span></li>
+          <li><span class="mono">2018.03</span><span>京都大学博士（農学）<br><small style="color:var(--muted);font-weight:400;font-size:12px;line-height:1.7">Soil Ecosystem Processes in Tropical Forests, Savanna, and Croplands of Cameroon</small></span></li>
+          <li><span class="mono">2018.04–2019.08</span><span><a href="https://nafu.ac.jp/" target="_blank" rel="noopener">新潟食料農業大学</a> 食料産業学部 助教</span></li>
+          <li><span class="mono">2019.09–2026.05</span><span>京都大学 <a href="https://www.ges.kyoto-u.ac.jp/" target="_blank" rel="noopener">大学院地球環境学堂</a>（<a href="https://www.kais.kyoto-u.ac.jp/" target="_blank" rel="noopener">農学研究科</a> <a href="https://www.soils.kais.kyoto-u.ac.jp/" target="_blank" rel="noopener">土壌学分野</a> 両任） 助教</span></li>
+          <li class="now"><span class="mono">2026.06–</span><span>京都大学 <a href="https://www.ges.kyoto-u.ac.jp/" target="_blank" rel="noopener">大学院地球環境学堂</a>（<a href="https://www.kais.kyoto-u.ac.jp/" target="_blank" rel="noopener">農学研究科</a> 両任） 准教授</span></li>
+        </ul>
+        <div class="side cv-after">
+        <div>
+          <h3>高校生向けの講義など</h3>
+          <ul>
+            <li>滋賀県立膳所高校 ドクター教員授業（2019年から毎年）</li>
+            <li>体験講義（函館ラ・サール高、新潟北高、尚志高、学法石川高、長野県赤穂高、中越高、阿賀黎明高など）</li>
+            <li>高校生のための体験型科学講座 京都大学 ELCAS</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="side">
+        <div>
+          <h3>リンク</h3>
+          <div class="ids">
+            <a href="https://scholar.google.com/citations?user=_hv3zwYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="https://orcid.org/0000-0002-7685-8711" target="_blank" rel="noopener">ORCID</a>
+            <a href="https://researchmap.jp/makotosbt" target="_blank" rel="noopener">researchmap</a>
+            <a href="https://nrid.nii.ac.jp/ja/nrid/1000040799607/" target="_blank" rel="noopener">KAKEN</a>
+            <a href="https://kdb.iimc.kyoto-u.ac.jp/profile/ja.4f6985216b28ca32.html" target="_blank" rel="noopener">京大 教育研究活動DB</a>
+          </div>
+        </div>
+        <div>
+          <h3>所属学会</h3>
+          <p><a href="https://jssspn.jp/" target="_blank" rel="noopener">日本土壌肥料学会</a>／<a href="http://pedology.jp/" target="_blank" rel="noopener">日本ペドロジー学会</a>／<a href="https://www.esj.ne.jp/esj/" target="_blank" rel="noopener">日本生態学会</a>／<a href="https://african-studies.com/" target="_blank" rel="noopener">日本アフリカ学会</a></p>
+        </div>
+        <div>
+          <h3>学会の委員など</h3>
+          <ul>
+            <li>日本土壌肥料学会 <a href="https://jssspn.jp/edu/" target="_blank" rel="noopener">土壌教育委員会</a> 委員（関西支部選出、<span style="white-space:nowrap">2026年度〜</span>）</li>
+            <li>日本ペドロジー学会 <a href="https://pedology.jp/organization.html" target="_blank" rel="noopener">事務局幹事</a>（副渉外・国際対応、<span style="white-space:nowrap">2026年度〜</span>）</li>
+            <li>日本ペドロジー学会 第6次土壌分類・命名委員会 委員（<span style="white-space:nowrap">2026年度〜</span>）</li>
+          </ul>
+        </div>
+        <div class="side-photo"><img src="img/profile/shibata-riceday.jpg" alt="「Have a Rice day!」と書かれたTシャツ" width="602" height="452" loading="lazy" style="display:block;width:100%;height:auto;border-radius:3px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© Makoto Shibata · Kyoto University　·　業績データ：researchmap</div></footer>
+
+<script data-goatcounter="https://shibata-soil.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="京都大学 柴田誠（土壌学）と一緒に研究している学生たち。学年・調査地・研究テーマ・出た論文。">
+<meta property="og:title" content="一緒に研究している学生たち — 柴田誠 — 京都大学 地球環境学堂">
+<meta property="og:type" content="website">
+<style>img{max-width:100%;height:auto;display:block}[hidden]{display:none!important}body{margin:0}</style>
+<title>一緒に研究している学生たち — 柴田誠 — 京都大学 地球環境学堂</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Kiwi+Maru:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Nunito+Sans:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a soil profile read top to bottom. Left-aligned editorial column; horizon colours (Munsell) carry the identity, everything else stays quiet. */
+:root{
+  --bg:#F4EFE6;
+  --bg-alt:#ECE5D8;
+  --surface:#F4EFE6;
+  --ink:#2E2722;
+  --muted:#574C43;
+  --rule:#D9CFC0;
+  --accent:#C8622F;
+  --accent-strong:#A94F24;
+  --accent-ink:#ffffff;
+  --gley:#6F7F4E;
+  --todo-bg:#EBD9A6;--todo-fg:#6E5410;
+  --h-o:#3a2c22;--h-a:#6b3f2a;--h-b:#a8442a;--h-c:#c0623c;
+  --p-ap:#5b5650;--p-b:#7f7c74;--p-mot:#b8742f;--p-c:#6f8a80;
+  --f-voice:"Kiwi Maru",cursive;
+  --f-title:"Zen Maru Gothic","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-latin:"Nunito Sans","Zen Kaku Gothic New",sans-serif;
+  --f-mono:"IBM Plex Mono","Zen Kaku Gothic New",monospace;
+  --s-1:.8125rem;--s0:1rem;--s1:1.1875rem;--s2:1.5rem;--s3:2.125rem;--s4:clamp(2.25rem,6vw,3.75rem);
+  --wrap:68rem;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit;text-decoration-color:color-mix(in srgb,var(--accent-strong) 40%,transparent);text-underline-offset:.2em}
+a:hover{color:var(--accent-strong)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-title);font-weight:700;line-height:1.35;letter-spacing:.03em;text-wrap:balance;margin:0}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.todo{background:var(--todo-bg);color:var(--todo-fg);font-family:var(--f-body);font-size:.78em;font-weight:700;padding:.05em .45em;border-radius:3px;white-space:nowrap}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 95%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:1rem;padding-block:.6rem}
+.brand{font-family:var(--f-title);font-weight:700;font-size:var(--s1);text-decoration:none;white-space:nowrap}
+.brand small{font-family:var(--f-latin);font-weight:600;font-size:.68em;color:var(--muted);margin-left:.6em}
+.nav{display:flex;gap:1.4rem;margin-left:auto;overflow-x:auto;scrollbar-width:none;font-family:var(--f-latin);font-size:.9375rem;font-weight:600;letter-spacing:.02em}
+.nav::-webkit-scrollbar{display:none}
+.nav a{text-decoration:none;white-space:nowrap;color:var(--ink)}
+.nav a:hover{color:var(--ink)}
+.nav a.join{color:var(--accent-strong);font-weight:700}
+.nav a.join small{font-family:var(--f-title);font-weight:700;font-size:.68rem;letter-spacing:.1em;color:var(--accent-strong);border:1px solid var(--accent-strong);border-radius:2px;padding:.08em .4em 0 .5em;margin-left:.45em;line-height:1.3;vertical-align:.12em;white-space:nowrap}
+@media (max-width:760px){.brand small{display:none}.top .wrap{flex-wrap:wrap;gap:.25rem}.nav{margin-left:0;width:100%;gap:.15rem 1rem;font-size:.875rem;flex-wrap:wrap;overflow:visible}}
+
+/* sections */
+section{border-top:1px solid var(--rule)}
+section > .wrap{padding-block:clamp(3rem,7vw,5rem)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr);gap:.6rem;margin-bottom:2.2rem}
+.sec-head .depth{font-family:var(--f-body);font-weight:700;font-size:var(--s-1);color:var(--muted)}
+.sec-head h2{font-size:var(--s3)}
+.sec-head p{color:var(--muted)}
+
+/* people — 一緒に研究している学生 */
+.people{margin-top:0}
+.people h3{font-size:var(--s2);margin-bottom:.3rem}
+.people .lead{color:var(--muted);font-size:var(--s-1);max-width:46rem;margin-bottom:1.2rem}
+.people h4{font-family:var(--f-body);font-weight:700;font-size:var(--s-1);color:var(--muted);margin:2rem 0 .4rem}
+.plist{list-style:none;margin:0;padding:0}
+.plist > li{display:grid;grid-template-columns:3.2rem minmax(0,1fr);gap:1rem;padding:1.1rem 0;border-top:1px solid var(--rule)}
+.plist > li:last-child{border-bottom:1px solid var(--rule)}
+.plist.alum > li{grid-template-columns:8rem minmax(0,1fr)}
+.plist .g{font-family:var(--f-mono);color:var(--accent-strong);font-size:var(--s0);padding-top:.35em;white-space:nowrap}
+.plist .g small{display:block;color:var(--muted);font-size:.9em}
+.plist .nm{font-weight:700;font-size:var(--s1);display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem .7rem}
+.plist .fld{font-family:var(--f-mono);font-weight:400;font-size:.78rem;color:#55633A;border:1px solid color-mix(in srgb,var(--gley) 55%,transparent);border-radius:3px;padding:.05em .6em}
+.plist .th{color:var(--ink);font-size:var(--s0);line-height:1.75;margin-top:.25rem;max-width:46rem}
+.plist .now{font-size:var(--s0);color:var(--muted);margin-top:.2rem}
+.plist .pp{margin:.5rem 0 0;padding-left:1.1em;font-size:var(--s0);line-height:1.7;color:var(--ink)}
+.plist .pp li{margin:.1rem 0}
+.plist .pp .v{color:var(--muted)}
+.people .empty{color:var(--muted);font-size:var(--s-1)}
+@media (max-width:760px){.plist > li,.plist.alum > li{grid-template-columns:minmax(0,1fr);gap:.2rem}.plist .g small{display:inline;margin-left:.6em}}
+.people h3{font-family:var(--f-voice);font-weight:500}
+.sec-head h2 .nb{display:inline-block}
+@media (max-width:760px){#members .sec-head h2{font-size:1.75rem}}
+.back{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--rule);font-size:var(--s0)}
+.back a{font-weight:700;color:var(--accent-strong);text-decoration:none}
+.back a:hover{text-decoration:underline}
+
+/* footer */
+footer{background:var(--ink);color:color-mix(in srgb,var(--bg) 70%,var(--ink));font-size:.72rem}
+footer .wrap{padding-block:1.2rem 2rem;border-top:1px solid color-mix(in srgb,var(--bg) 20%,var(--ink))}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">柴田 誠</a>
+    <nav class="nav" aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="students.html" class="join">For Students<small>募集中</small></a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html">News</a>
+      <a href="members.html" aria-current="page">Members</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="members">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="depth mono">Members</p>
+      <h2><span class="nb">一緒に研究している</span><span class="nb">学生たち</span></h2>
+      <p>所属は農学研究科 土壌学分野・比較農業論分野か、地球環境学舎 陸域生態系管理論分野。<br>学年・調査地・研究テーマと、出た論文を載せています。</p>
+    </div>
+
+    <div class="people" id="people">
+      <h3>在学生</h3>
+      <ul class="plist" id="people-current"></ul>
+
+      <h3 style="margin-top:3rem">卒業生</h3>
+      <ul class="plist alum" id="people-alumni"></ul>
+    </div>
+
+    <p class="back">一緒に研究してみたい人は、<a href="students.html">For Students</a> へ。見学や相談はいつでも受け付けています。</p>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© Makoto Shibata · Kyoto University　·　業績データ：researchmap</div></footer>
+
+<script src="data.js"></script>
+<script src="people.js"></script>
+<script>
+(function(){
+  const P = window.PEOPLE || {current:[], alumni:[]};
+  const papers = (window.RM && window.RM.papers) || [];
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const fmtIso = s => s.replace(/(\d+)(C|N|O|S|P)\b/g,'<sup>$1</sup>$2');
+  // 著者名の照合：空白とピリオドを除いて比較（"Kawakami, Y." = "Kawakami,Y"）
+  const norm = s => String(s).replace(/[\s.．・]/g, "").toLowerCase();
+  const papersOf = p => {
+    const keys = (p.pub || []).map(norm).filter(Boolean);
+    if (!keys.length) return [];
+    return papers.filter(a => (a.authors || []).some(x => keys.includes(norm(x))))
+                 .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  };
+  const fmtPaper = a => {
+    const yr = String(a.date || "").slice(0, 4);
+    const t = a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a>` : esc(a.title);
+    return `<li>${t} <span class="v">${esc(a.venue)}${yr ? " (" + yr + ")" : ""}</span></li>`;
+  };
+  const row = (p, alum) => {
+    const g = alum
+      ? `<span class="g">${esc(p.degree || "")}<small>${esc(p.years || "")}</small></span>`
+      : `<span class="g">${esc(p.grade || "")}</span>`;
+    const fld = p.field ? `<span class="fld">${esc(p.field)}</span>` : `<span class="todo">調査地</span>`;
+    const pp = papersOf(p);
+    return `<li>${g}<div>
+      <div class="nm"><span>${esc(p.name)}</span>${fld}</div>
+      ${p.theme ? `<p class="th">${fmtIso(esc(p.theme))}</p>` : ""}
+      ${alum && p.now ? `<p class="now">現在：${esc(p.now)}</p>` : ""}
+      ${pp.length ? `<ul class="pp">${pp.map(fmtPaper).join("")}</ul>` : ""}
+    </div></li>`;
+  };
+  const fill = (id, list, alum, emptyMsg) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (!list.length) { el.outerHTML = `<p class="empty">${emptyMsg}</p>`; return; }
+    el.innerHTML = list.map(p => row(p, alum)).join("");
+  };
+  fill("people-current", P.current || [], false, "準備中");
+  fill("people-alumni", P.alumni || [], true, "準備中");
+})();
+</script>
+<script data-goatcounter="https://shibata-soil.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
